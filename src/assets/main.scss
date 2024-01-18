@@ -1,0 +1,32 @@
+.center {  
+
+  display: flex;  
+
+  flex-direction: column;
+
+  justify-content: flex-start;  
+
+  //flex-wrap: wrap; 
+
+  height: 100vh; /* 使得容器占据整个视口高度 */  
+
+  margin: 0 auto; /* 左右边距自动 */  
+
+  padding: 0 25%; /* 左右边距30% */  
+
+}
+
+body {
+
+  margin: 0;
+
+  background-image: url('./background/p5r-background-violet.jpg');
+
+  background-repeat: no-repeat;  
+
+  background-position: center;  
+  
+  background-size: cover;  
+
+  background-attachment: fixed;
+}
