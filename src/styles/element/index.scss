@@ -1,7 +1,26 @@
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  // 输入框
   $input: (
-    'placeholder-color': green,
-    'bg-color': #350505,
-    'border-color': red
-  )
-);
+    'text-color': white,
+    'placeholder-color': gray,
+    'bg-color': #1B1818,
+    'border-color': white,
+    'focus-border-color': rgb(182, 49, 49)
+  ),
+
+  // 按钮
+  /* $button: (
+    'bg-color': rgb(182, 49, 49),
+    'border-color': rgb(182, 49, 49),
+    'text-color': white
+  ), */
+
+  // 表格
+  $table: (
+    'text-color': rgb(0, 0, 0),
+    'header-bg-color': rgb(182, 49, 49),
+    'header-text-color': rgb(255, 255, 255),
+    'tr-bg-color': rgb(218, 209, 209),
+    'row-hover-bg-color': rgb(218, 209, 209)
+  ),
+)

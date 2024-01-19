@@ -1,25 +1,28 @@
 <template>
   <div class="search">
     <div class="search-in-box">
-      <el-autocomplete
-        v-model="state1"
-        :fetch-suggestions="querySearch"
-        clearable
-        class="arcana"
-        placeholder="阿尔卡纳"
-        @select="handleSelect"
-        popper-class="sub-arcana"
-      />
-      <el-autocomplete
-        v-model="state2"
-        :fetch-suggestions="querySearch"
-        :trigger-on-focus="false"
-        clearable
-        class="persona-name"
-        placeholder="面具名称"
-        @select="handleSelect"
-      />
-      <el-button color="#000000" plain>搜索</el-button>
+      <span class="arcana-span">
+        <el-autocomplete
+          v-model="state1"
+          :fetch-suggestions="querySearch"
+          class="arcana"
+          placeholder="阿尔卡纳"
+          @select="handleSelect"
+          popper-class="sub-arcana"
+      /></span>
+      <span class="persona-name-span">
+        <el-autocomplete
+          v-model="state2"
+          :fetch-suggestions="querySearch"
+          :trigger-on-focus="false"
+          class="persona-name"
+          placeholder="面具名称"
+          @select="handleSelect"
+          popper-class="sub-arcana"
+        />
+      </span>
+      <el-button plain class="search-btn">搜索</el-button>
+      <el-button plain class="clear-btn">清空</el-button>
     </div>
     <PersonaArticle></PersonaArticle>
   </div>
@@ -84,7 +87,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .search {
-  background-color: black;
+  background-color: #1b1818;
   width: 100%;
   margin: 5px 0 0 0;
   .search-in-box {
@@ -92,6 +95,40 @@ onMounted(() => {
     display: flex;
     margin: 10px 10px;
     justify-content: flex-start;
+    .arcana-span {
+      margin-right: 10px;
+      .arcana {
+        width: 20%;
+      }
+    }
+    .persona-name-span {
+      margin-right: 10px;
+    }
+    .search-btn {
+      background-color: rgb(182, 49, 49);
+      color: white;
+      --el-button-hover-border-color: red;
+      --el-button-active-border-color: #1b1818;
+    }
+    .clear-btn {
+      background-color: #1b1818;
+      color: white;
+      --el-button-hover-border-color: red;
+      --el-button-active-border-color: rgb(182, 49, 49);
+    }
+  }
+}
+</style>
+
+<style>
+/* 更改下拉框背景色 */
+.sub-arcana {
+  --el-bg-color-overlay: #1b1818;
+  li {
+    color: white;
+  }
+  li:hover {
+    background-color: rgb(182, 49, 49);
   }
 }
 </style>
