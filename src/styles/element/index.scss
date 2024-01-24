@@ -1,14 +1,23 @@
+// 声明全局变量
+// 主题的红色，统一颜色，保证风格统一
+$default-red-color: #B63131;  
+// 主题的黑色
+$default-black-color: #1B1818;
+// 主题的灰色
+$default-gray-color: #DAD1D1;
+
+// 全局配置
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   // 输入框
   $input: (
     'text-color': white,
     'placeholder-color': gray,
-    'bg-color': #1B1818,
+    'bg-color': $default-black-color,
     'border-color': white,
-    'focus-border-color': rgb(182, 49, 49)
+    'focus-border-color': $default-red-color
   ),
 
-  // 按钮
+  // 按钮 有不同风格按钮，需单独配置
   /* $button: (
     'bg-color': rgb(182, 49, 49),
     'border-color': rgb(182, 49, 49),
@@ -17,10 +26,10 @@
 
   // 表格
   $table: (
-    'text-color': rgb(0, 0, 0),
-    'header-bg-color': rgb(182, 49, 49),
-    'header-text-color': rgb(255, 255, 255),
-    'tr-bg-color': rgb(218, 209, 209),
-    'row-hover-bg-color': rgb(218, 209, 209)
+    'text-color': black,
+    'header-bg-color': $default-red-color,
+    'header-text-color': white,
+    'tr-bg-color': $default-gray-color,
+    'row-hover-bg-color': $default-gray-color
   ),
-)
+);

@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-table
-      :data="tableData"
+      :data="personaList"
       border
       style="width: 100%"
       :header-cell-style="{ 'text-align': 'center' }"
@@ -39,62 +39,26 @@
 </template>
 
 <script lang="ts" setup>
-const tableData = [
-  {
-    id: 1,
-    arcana: '愚者',
-    name: '亚森',
-    level: '1',
-    skill: ['耶哈', '斩击', '斯昆达', '织梦针', '逆境的觉悟'],
-    characteristic: '逆转的王牌',
-    physics: '-',
-    gun: '-',
-    fire: '-',
-    ice: '弱',
-    electricity: '-',
-    wind: '-',
-    cognition: '-',
-    nuclear: '-',
-    bless: '弱',
-    curse: '耐'
-  },
-  {
-    id: 2,
-    arcana: '愚者',
-    name: '亚森',
-    level: '1',
-    skill: ['耶哈', '斩击', '斯昆达', '织梦针', '逆境的觉悟'],
-    characteristic: '逆转的王牌',
-    physics: '-',
-    gun: '-',
-    fire: '-',
-    ice: '弱',
-    electricity: '-',
-    wind: '-',
-    cognition: '-',
-    nuclear: '-',
-    bless: '弱',
-    curse: '耐'
-  },
-  {
-    id: 1,
-    arcana: '愚者',
-    name: '亚森',
-    level: '1',
-    skill: ['耶哈', '斩击', '斯昆达', '织梦针', '逆境的觉悟'],
-    characteristic: '逆转的王牌',
-    physics: '-',
-    gun: '-',
-    fire: '-',
-    ice: '弱',
-    electricity: '-',
-    wind: '-',
-    cognition: '-',
-    nuclear: '-',
-    bless: '弱',
-    curse: '耐'
+import { getPersonaService } from '@/api/persona'
+import { usePersonaStore } from '@/stores/persona'
+import { ref, onMounted } from 'vue'
+import { type persona } from '@/common/interface'
+
+const personaList = ref<persona[]>([])
+const personaStore = usePersonaStore()
+const getPersonaList = async () => {
+  if (personaStore.personas.length > 0) {
+    personaList.value = personaStore.personas
+  } else {
+    let res: any = await getPersonaService()
+    personaList.value = res.data.data
+    // personaList.value = res.data.data
   }
-]
+}
+
+onMounted(() => {
+  getPersonaList()
+})
 </script>
 
 <style scoped lang="scss"></style>

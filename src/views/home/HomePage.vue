@@ -76,7 +76,7 @@ const loadAll = () => {
   ]
 }
 
-const handleSelect = (item: RestaurantItem) => {
+const handleSelect = (item: any) => {
   console.log(item)
 }
 
@@ -87,7 +87,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .search {
-  background-color: #1b1818;
+  background-color: $default-black-color;
   width: 100%;
   margin: 5px 0 0 0;
   .search-in-box {
@@ -105,7 +105,7 @@ onMounted(() => {
       margin-right: 10px;
     }
     .search-btn {
-      background-color: rgb(182, 49, 49);
+      background-color: $default-red-color;
       color: white;
       --el-button-hover-border-color: red;
       --el-button-active-border-color: #1b1818;
@@ -120,7 +120,7 @@ onMounted(() => {
 }
 </style>
 
-<style>
+<style lang="scss">
 /* 更改下拉框背景色 */
 .sub-arcana {
   --el-bg-color-overlay: #1b1818;
@@ -128,7 +128,7 @@ onMounted(() => {
     color: white;
   }
   li:hover {
-    background-color: rgb(182, 49, 49);
+    background-color: $default-red-color;
   }
 }
 </style>
