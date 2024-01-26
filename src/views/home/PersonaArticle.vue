@@ -39,22 +39,48 @@
 </template>
 
 <script lang="ts" setup>
-import { getPersonaService } from '@/api/persona'
+// import { getPersonaService } from '@/api/persona'
+import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
-import { ref, onMounted } from 'vue'
-import { type persona } from '@/common/interface'
-
+import { ref, onMounted, provide } from 'vue'
+import { type persona, type responseParams } from '@/common/interface'
+// 定义渲染列表
 const personaList = ref<persona[]>([])
+// 本地存储的数据
 const personaStore = usePersonaStore()
+// 发送请求，若本地已有数据，直接获取不进行请求
 const getPersonaList = async () => {
   if (personaStore.personas.length > 0) {
     personaList.value = personaStore.personas
   } else {
-    let res: any = await getPersonaService()
-    personaList.value = res.data.data
+    let { data } = await axios.request<{ data: responseParams }>('get', '/home')
+    console.log(data)
+    let personas = data.data
+    personaList.value = personas
     // personaList.value = res.data.data
+    // 将请求的数据存入本地
+    personaStore.setPersona(personas)
+    console.log('存储到本地了')
   }
 }
+
+// 搜索功能
+const search = (arcana: string, name: string) => {
+  if (arcana === '' && name === '') {
+    personaList.value = personaStore.personas
+  } else {
+    personaList.value = personaStore.personas.filter((item) => {
+      return (
+        (arcana === '' || item.arcana.includes(arcana)) &&
+        (name === '' || item.name.includes(name))
+      )
+    })
+  }
+}
+
+defineExpose({
+  search
+})
 
 onMounted(() => {
   getPersonaList()

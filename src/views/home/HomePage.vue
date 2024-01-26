@@ -3,7 +3,7 @@
     <div class="search-in-box">
       <span class="arcana-span">
         <el-autocomplete
-          v-model="state1"
+          v-model="arcana"
           :fetch-suggestions="querySearch"
           class="arcana"
           placeholder="阿尔卡纳"
@@ -12,7 +12,7 @@
       /></span>
       <span class="persona-name-span">
         <el-autocomplete
-          v-model="state2"
+          v-model="name"
           :fetch-suggestions="querySearch"
           :trigger-on-focus="false"
           class="persona-name"
@@ -21,10 +21,10 @@
           popper-class="sub-arcana"
         />
       </span>
-      <el-button plain class="search-btn">搜索</el-button>
+      <el-button plain class="search-btn" @click="searchFn">搜索</el-button>
       <el-button plain class="clear-btn">清空</el-button>
     </div>
-    <PersonaArticle></PersonaArticle>
+    <PersonaArticle ref="articleComp"></PersonaArticle>
   </div>
 </template>
 
@@ -34,14 +34,24 @@ import { onMounted, ref } from 'vue'
 // 导入自定义表格组件
 import PersonaArticle from './PersonaArticle.vue'
 
+const articleComp = ref(null)
+
 // 定义了一个RestaurantItem接口，分别为值和链接
 interface RestaurantItem {
   value: string
 }
 
 // 绑定输入框中的数据
-const state1 = ref('')
-const state2 = ref('')
+const arcana = ref('')
+const name = ref('')
+
+// 搜索点击按钮
+const searchFn = () => {
+  console.log('点击了搜索按钮')
+  if (articleComp.value !== null) {
+    articleComp.value.search(arcana.value, name.value)
+  }
+}
 
 // 创建该接口的数组的响应式数据
 const restaurants = ref<RestaurantItem[]>([])

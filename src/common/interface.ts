@@ -17,4 +17,10 @@ interface persona {
   curse: string
 }
 
-export { type persona }
+interface responseParams {
+  code: number
+  message: string
+  data?: any
+}
+
+export { type persona, type responseParams }
