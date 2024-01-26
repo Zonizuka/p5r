@@ -42,7 +42,7 @@
 // import { getPersonaService } from '@/api/persona'
 import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
-import { ref, onMounted, provide } from 'vue'
+import { ref, onMounted } from 'vue'
 import { type persona, type responseParams } from '@/common/interface'
 // 定义渲染列表
 const personaList = ref<persona[]>([])
