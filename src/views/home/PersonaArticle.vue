@@ -43,7 +43,11 @@
 import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
 import { ref, onMounted } from 'vue'
-import { type persona, type responseParams } from '@/common/interface'
+import {
+  type persona,
+  type responseParams,
+  type searchList
+} from '@/common/interface'
 // 定义渲染列表
 const personaList = ref<persona[]>([])
 // 本地存储的数据
@@ -64,7 +68,35 @@ const getPersonaList = async () => {
   }
 }
 
-// 搜索功能
+// 获得面具列表后，将面具列表里的personaList提取出来
+const getArcanaList = () => {
+  if (personaStore.personas.length > 0) {
+    // 创建搜索列表数组
+    const uniqueArcana: searchList[] = []
+    const uniqueName: searchList[] = []
+    // 创建一个临时数组
+    let tempArcanaArr: string[] = []
+    let tempNameArr: string[] = []
+    for (const item of personaStore.personas) {
+      let arcana = item.arcana
+      let name = item.name
+      if (!tempArcanaArr.includes(arcana)) {
+        tempArcanaArr.push(arcana)
+        uniqueArcana.push({ value: arcana })
+      }
+      if (!tempNameArr.includes(name)) {
+        tempNameArr.push(name)
+        uniqueName.push({ value: name })
+      }
+    }
+    console.log('阿尔卡纳列表', uniqueArcana)
+    console.log('面具列表', uniqueName)
+    personaStore.setArcanaList(uniqueArcana)
+    personaStore.setNameList(uniqueName)
+  }
+}
+
+// 搜索功能，父组件调用该search方法返回新的列表
 const search = (arcana: string, name: string) => {
   if (arcana === '' && name === '') {
     personaList.value = personaStore.personas
@@ -84,6 +116,9 @@ defineExpose({
 
 onMounted(() => {
   getPersonaList()
+  console.log('发送请求了')
+  getArcanaList()
+  console.log('处理了阿尔卡纳列表和面具')
 })
 </script>
 

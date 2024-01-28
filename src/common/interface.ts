@@ -23,4 +23,8 @@ interface responseParams {
   data?: any
 }
 
-export { type persona, type responseParams }
+interface searchList {
+  value: string
+}
+
+export { type persona, type responseParams, type searchList }

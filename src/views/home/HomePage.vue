@@ -4,7 +4,7 @@
       <span class="arcana-span">
         <el-autocomplete
           v-model="arcana"
-          :fetch-suggestions="querySearch"
+          :fetch-suggestions="querySearchArcana"
           class="arcana"
           placeholder="阿尔卡纳"
           @select="handleSelect"
@@ -13,7 +13,7 @@
       <span class="persona-name-span">
         <el-autocomplete
           v-model="name"
-          :fetch-suggestions="querySearch"
+          :fetch-suggestions="querySearchName"
           :trigger-on-focus="false"
           class="persona-name"
           placeholder="面具名称"
@@ -21,8 +21,8 @@
           popper-class="sub-arcana"
         />
       </span>
-      <el-button plain class="search-btn" @click="searchFn">搜索</el-button>
-      <el-button plain class="clear-btn">清空</el-button>
+      <el-button plain class="search-btn" @click="searchFn()">搜索</el-button>
+      <el-button plain class="clear-btn" @click="clearFn()">清空</el-button>
     </div>
     <PersonaArticle ref="articleComp"></PersonaArticle>
   </div>
@@ -33,13 +33,15 @@
 import { onMounted, ref } from 'vue'
 // 导入自定义表格组件
 import PersonaArticle from './PersonaArticle.vue'
+// 导入persona的接口
+import { type searchList } from '@/common/interface'
+// 导入persona的store
+import { usePersonaStore } from '@/stores/persona'
 
-const articleComp = ref(null)
+const personaStore = usePersonaStore()
 
-// 定义了一个RestaurantItem接口，分别为值和链接
-interface RestaurantItem {
-  value: string
-}
+// 引用表格组件
+const articleComp: any = ref(null)
 
 // 绑定输入框中的数据
 const arcana = ref('')
@@ -53,45 +55,61 @@ const searchFn = () => {
   }
 }
 
-// 创建该接口的数组的响应式数据
-const restaurants = ref<RestaurantItem[]>([])
+// 清空点击按钮
+const clearFn = () => {
+  arcana.value = ''
+  name.value = ''
+  articleComp.value.search('', '')
+}
 
+// 创建阿尔卡纳和名称数组的响应式数据
+const arcanaList = ref<searchList[]>([])
+const nameList = ref<searchList[]>([])
+
+// 根据输入框字符串返回结果，处理阿尔卡纳输入框
 // 接收两个参数，一个字符串，一个回调函数
-const querySearch = (queryString: string, cb: any) => {
+const querySearchArcana = (queryString: string, cb: any) => {
   // 判断请求字符串是否存在，如果存在，则调用filter函数进行筛选，返回包含的值
   // 如果不存在，则返回所有值(未进行筛选)
   const results = queryString
-    ? restaurants.value.filter(createFilter(queryString))
-    : restaurants.value
+    ? arcanaList.value.filter(createFilter(queryString))
+    : arcanaList.value
   // call callback function to return suggestions
   cb(results)
 }
+// 根据输入框字符串返回结果，处理面具名称输入框
+const querySearchName = (queryString: string, cb: any) => {
+  // 判断请求字符串是否存在，如果存在，则调用filter函数进行筛选，返回包含的值
+  // 如果不存在，则返回所有值(未进行筛选)
+  const results = queryString
+    ? nameList.value.filter(createFilter(queryString))
+    : nameList.value
+  // call callback function to return suggestions
+  cb(results)
+}
+
+// 根据自定义过滤规则返回结果
 const createFilter = (queryString: string) => {
-  return (restaurant: RestaurantItem) => {
+  return (restaurant: searchList) => {
     return (
       restaurant.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0
     )
   }
 }
 
-const loadAll = () => {
-  return [
-    { value: '愚者' },
-    { value: '死神' },
-    { value: '教皇' },
-    { value: '女教皇' },
-    { value: '恋爱' },
-    { value: '皇帝' },
-    { value: '魔术师' }
-  ]
+// 加载自动补全框的数据
+const loadData = () => {
+  arcanaList.value = personaStore.arcanaList
+  nameList.value = personaStore.nameList
 }
 
 const handleSelect = (item: any) => {
   console.log(item)
+  searchFn()
 }
 
 onMounted(() => {
-  restaurants.value = loadAll()
+  loadData()
 })
 </script>
 
