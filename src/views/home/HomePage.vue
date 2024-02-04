@@ -74,7 +74,7 @@ const querySearchArcana = (queryString: string, cb: any) => {
   const results = queryString
     ? arcanaList.value.filter(createFilter(queryString))
     : arcanaList.value
-  // call callback function to return suggestions
+  // 返回筛选后的数据
   cb(results)
 }
 // 根据输入框字符串返回结果，处理面具名称输入框

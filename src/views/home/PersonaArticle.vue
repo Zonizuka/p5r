@@ -64,7 +64,7 @@ const getPersonaList = async () => {
     // personaList.value = res.data.data
     // 将请求的数据存入本地
     personaStore.setPersona(personas)
-    console.log('存储到本地了')
+    console.log('面具列表存储到本地了')
   }
 }
 
