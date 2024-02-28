@@ -1,5 +1,5 @@
 <template>
   <div>Persona页面</div>
 </template>
-<script></script>
-<style></style>
+<script lang="ts" setup></script>
+<style scoped></style>
