@@ -1,6 +1,8 @@
 import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
 
-axios.defaults.baseURL = 'https://mock.apifox.com/m1/3960703-0-default'
+axios.defaults.baseURL = 'http://127.0.0.1:8080'
+
+// 'https://mock.apifox.com/m1/3960703-0-default'
 
 // 请求拦截器
 axios.interceptors.request.use((config: AxiosRequestConfig | any) => config)

@@ -5,10 +5,20 @@
       border
       style="width: 100%"
       :header-cell-style="{ 'text-align': 'center' }"
-      :cell-style="{ 'text-align': 'center' }"
+      :cell-style="setCellStyle"
     >
+      <el-table-column prop="name" label="名称" min-width="10">
+        <template #default="scope">
+          <div>
+            <a
+              href=""
+              @click.prevent="$router.push(`/persona/${scope.row.id}`)"
+              >{{ scope.row.name }}</a
+            >
+          </div>
+        </template>
+      </el-table-column>
       <el-table-column prop="arcana" label="阿尔卡纳" min-width="10" />
-      <el-table-column prop="name" label="名称" min-width="10" />
       <el-table-column prop="level" label="基础等级" min-width="10" />
       <el-table-column prop="skill" label="技能" min-width="20">
         <template #default="scope">
@@ -24,7 +34,12 @@
         </template>
       </el-table-column>
       <el-table-column prop="characteristic" label="特性" min-width="10" />
-      <el-table-column prop="physics" label="物" min-width="4" />
+      <el-table-column
+        prop="physics"
+        label="物"
+        min-width="4"
+        class="physics"
+      />
       <el-table-column prop="gun" label="枪" min-width="4" />
       <el-table-column prop="fire" label="火" min-width="4" />
       <el-table-column prop="ice" label="冰" min-width="4" />
@@ -110,6 +125,52 @@ const search = (arcana: string, name: string) => {
   }
 }
 
+// cell-style的回调方法
+const setCellStyle: any = ({ columnIndex }: { columnIndex: number }) => {
+  switch (columnIndex) {
+    case 0:
+      return { 'text-align': 'center' }
+    case 1:
+      return { 'text-align': 'center' }
+    case 2:
+      return { 'text-align': 'center' }
+    case 3:
+      return { 'text-align': 'center' }
+    case 4:
+      return { 'text-align': 'center' }
+    // 抗性单元格开始，物理
+    case 5:
+      return { 'text-align': 'center', 'background-color': '#F7C477' }
+    // 枪
+    case 6:
+      return { 'text-align': 'center', 'background-color': '#FFA51E' }
+    // 火
+    case 7:
+      return { 'text-align': 'center', 'background-color': '#FF8585' }
+    // 冰
+    case 8:
+      return { 'text-align': 'center', 'background-color': '#96B0FF' }
+    // 电
+    case 9:
+      return { 'text-align': 'center', 'background-color': '#EBEC5A' }
+    // 风
+    case 10:
+      return { 'text-align': 'center', 'background-color': '#99E849' }
+    // 念
+    case 11:
+      return { 'text-align': 'center', 'background-color': '#FFA8FF' }
+    // 核
+    case 12:
+      return { 'text-align': 'center', 'background-color': '#96ACEE' }
+    // 祝
+    case 13:
+      return { 'text-align': 'center', 'background-color': '#FFFFCC' }
+    // 咒
+    case 14:
+      return { 'text-align': 'center', 'background-color': '#D2D2C6' }
+  }
+}
+
 defineExpose({
   search
 })
@@ -122,4 +183,18 @@ onMounted(() => {
 })
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.physics {
+  background: black;
+}
+
+a:link,
+a:visited {
+  color: rgb(61, 61, 192);
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+</style>
