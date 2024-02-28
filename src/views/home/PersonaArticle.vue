@@ -55,13 +55,13 @@
 
 <script lang="ts" setup>
 // import { getPersonaService } from '@/api/persona'
-import axios from '@/http/index'
+// import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
 import { ref, onMounted } from 'vue'
 import PersonaList from '@/json/PersonaList'
 import {
   type persona,
-  type responseParams,
+  //type responseParams,
   type searchList
 } from '@/common/interface'
 // 定义渲染列表
