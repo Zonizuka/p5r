@@ -34,12 +34,7 @@
         </template>
       </el-table-column>
       <el-table-column prop="characteristic" label="特性" min-width="10" />
-      <el-table-column
-        prop="physics"
-        label="物"
-        min-width="4"
-        class="physics"
-      />
+      <el-table-column prop="physics" label="物" min-width="4" />
       <el-table-column prop="gun" label="枪" min-width="4" />
       <el-table-column prop="fire" label="火" min-width="4" />
       <el-table-column prop="ice" label="冰" min-width="4" />
@@ -61,7 +56,7 @@ import { ref, onMounted } from 'vue'
 import PersonaList from '@/json/PersonaList'
 import {
   type persona,
-  //type responseParams,
+  // type responseParams,
   type searchList
 } from '@/common/interface'
 // 定义渲染列表
@@ -75,14 +70,15 @@ const getPersonaList = async () => {
     personaList.value = personaStore.personas
   } else {
     personaStore.setPersona(PersonaList)
+    personaList.value = personaStore.personas
     /* let { data } = await axios.request<{ data: responseParams }>('get', '/home')
     console.log(data)
     let personas = data.data
     personaList.value = personas
     // personaList.value = res.data.data
     // 将请求的数据存入本地
-    personaStore.setPersona(personas)
-    console.log('面具列表存储到本地了') */
+    personaStore.setPersona(personas) */
+    console.log('面具列表存储到本地了')
   }
 }
 
@@ -187,10 +183,6 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-.physics {
-  background: black;
-}
-
 a:link,
 a:visited {
   color: rgb(61, 61, 192);

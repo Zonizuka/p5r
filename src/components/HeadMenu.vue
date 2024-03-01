@@ -24,7 +24,7 @@ const handleSelect = (key: String, keyPath: String[]) => {
         :ellipsis="ellipsis"
         router
       >
-        <el-menu-item class="menu-item" index="home">面具一览</el-menu-item>
+        <el-menu-item class="menu-item" index="/home">面具一览</el-menu-item>
         <el-menu-item class="menu-item" index="skill">技能列表</el-menu-item>
         <el-menu-item class="menu-item" index="characteristic"
           >特性列表</el-menu-item
