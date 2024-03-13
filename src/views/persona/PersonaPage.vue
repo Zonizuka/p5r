@@ -7,15 +7,25 @@
       :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="setCellStyle"
     >
-      <el-table-column prop="name" label="名称" min-width="10">
+      <el-table-column prop="name" label="名称" min-width="10" class="name">
         <template #default="scope">
           <div>
             <a href="" @click.prevent="">{{ scope.row.name }}</a>
           </div>
         </template>
       </el-table-column>
-      <el-table-column prop="arcana" label="阿尔卡纳" min-width="10" />
-      <el-table-column prop="level" label="基础等级" min-width="10" />
+      <el-table-column
+        prop="arcana"
+        label="阿尔卡纳"
+        min-width="10"
+        class="arcana"
+      />
+      <el-table-column
+        prop="level"
+        label="基础等级"
+        min-width="10"
+        class="level"
+      />
       <el-table-column prop="physics" label="物" min-width="4" />
       <el-table-column prop="gun" label="枪" min-width="4" />
       <el-table-column prop="fire" label="火" min-width="4" />
@@ -28,6 +38,7 @@
       <el-table-column prop="curse" label="咒" min-width="4" />
     </el-table>
   </div>
+
   <div class="characteristic-page">
     <el-table
       :data="personaFusion"
@@ -153,5 +164,11 @@ a:visited {
 
 a:hover {
   color: red;
+}
+
+@media screen and (min-width: 500) {
+  .name .arcana .level {
+    min-width: 5;
+  }
 }
 </style>

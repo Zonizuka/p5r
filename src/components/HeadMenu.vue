@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const activeIndex = ref('home')
-const ellipsis = ref(false)
-const handleSelect = (key: String, keyPath: String[]) => {
-  console.log(key, keyPath)
-}
-</script>
 <template>
   <div class="head">
     <div class="headPic">
@@ -38,6 +29,39 @@ const handleSelect = (key: String, keyPath: String[]) => {
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
+// 监听视口大小
+const viewportWidth = ref(window.innerWidth)
+const ellipsis = ref(false)
+
+const activeIndex = ref('home')
+const handleSelect = (key: String, keyPath: String[]) => {
+  console.log(key, keyPath)
+}
+
+const handleResize = () => {
+  viewportWidth.value = window.innerWidth
+
+  if (viewportWidth.value < 600) {
+    ellipsis.value = true
+  } else {
+    ellipsis.value = false
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+
+  handleResize()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
+</script>
+
 <style scoped>
 .head {
   width: 100%;

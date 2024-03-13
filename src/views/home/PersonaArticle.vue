@@ -34,16 +34,26 @@
         </template>
       </el-table-column>
       <el-table-column prop="characteristic" label="特性" min-width="10" />
-      <el-table-column prop="physics" label="物" min-width="4" />
-      <el-table-column prop="gun" label="枪" min-width="4" />
-      <el-table-column prop="fire" label="火" min-width="4" />
-      <el-table-column prop="ice" label="冰" min-width="4" />
-      <el-table-column prop="electricity" label="电" min-width="4" />
-      <el-table-column prop="wind" label="风" min-width="4" />
-      <el-table-column prop="cognition" label="念" min-width="4" />
-      <el-table-column prop="nuclear" label="核" min-width="4" />
-      <el-table-column prop="bless" label="祝" min-width="4" />
-      <el-table-column prop="curse" label="咒" min-width="4" />
+      <el-table-column prop="physics" label="物" min-width="4" v-if="isShow" />
+      <el-table-column prop="gun" label="枪" min-width="4" v-if="isShow" />
+      <el-table-column prop="fire" label="火" min-width="4" v-if="isShow" />
+      <el-table-column prop="ice" label="冰" min-width="4" v-if="isShow" />
+      <el-table-column
+        prop="electricity"
+        label="电"
+        min-width="4"
+        v-if="isShow"
+      />
+      <el-table-column prop="wind" label="风" min-width="4" v-if="false" />
+      <el-table-column
+        prop="cognition"
+        label="念"
+        min-width="4"
+        v-if="isShow"
+      />
+      <el-table-column prop="nuclear" label="核" min-width="4" v-if="isShow" />
+      <el-table-column prop="bless" label="祝" min-width="4" v-if="isShow" />
+      <el-table-column prop="curse" label="咒" min-width="4" v-if="isShow" />
     </el-table>
   </div>
 </template>
@@ -52,7 +62,7 @@
 // import { getPersonaService } from '@/api/persona'
 // import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import PersonaList from '@/json/PersonaList'
 import {
   type persona,
@@ -61,6 +71,9 @@ import {
 } from '@/common/interface'
 // 定义渲染列表
 const personaList = ref<persona[]>([])
+// 是否展示后面内容
+const isShow = ref(true)
+const viewportWidth = ref(window.innerWidth)
 // 本地存储的数据
 const personaStore = usePersonaStore()
 // 发送请求，若本地已有数据，直接获取不进行请求
@@ -170,6 +183,14 @@ const setCellStyle: any = ({ columnIndex }: { columnIndex: number }) => {
   }
 }
 
+const handleShow = () => {
+  if (viewportWidth.value < 700) {
+    isShow.value = false
+  } else {
+    isShow.value = true
+  }
+}
+
 defineExpose({
   search
 })
@@ -179,6 +200,12 @@ onMounted(() => {
   console.log('发送请求了')
   getArcanaList()
   console.log('处理了阿尔卡纳列表和面具')
+  window.addEventListener('resize', handleShow)
+  handleShow()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleShow)
 })
 </script>
 
