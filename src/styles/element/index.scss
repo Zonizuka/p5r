@@ -5,7 +5,8 @@ $default-red-color: #B63131;
 $default-black-color: #1B1818;
 // 主题的灰色
 $default-gray-color: #DAD1D1;
-
+// 字体大小
+$font-size-base: 14px;
 // 全局配置
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   // 输入框
@@ -32,4 +33,14 @@ $default-gray-color: #DAD1D1;
     'tr-bg-color': $default-gray-color,
     'row-hover-bg-color': $default-gray-color
   ),
+
+  $font-size: (
+    'base': $font-size-base,
+  )
+
+
 );
+
+@media screen and (max-width: 600px){
+  $font-size-base: 7px
+}

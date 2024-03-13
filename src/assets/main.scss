@@ -1,3 +1,5 @@
+$font-size-base: 14px;  
+
 .center {  
 
   display: flex;  
@@ -13,6 +15,14 @@
   margin: 0 auto; /* 左右边距自动 */  
 
   padding: 0 25%; /* 左右边距30% */  
+  
+  @media screen and (max-width: 1300px) {
+    padding: 0 15%
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 0
+  }
 
 }
 
@@ -29,4 +39,5 @@ body {
   background-size: cover;  
 
   background-attachment: fixed;
+
 }
