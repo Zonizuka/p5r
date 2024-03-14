@@ -7,7 +7,12 @@
       :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="setCellStyle"
     >
-      <el-table-column prop="name" label="名称" min-width="10" class="name">
+      <el-table-column
+        prop="name"
+        label="名称"
+        :min-width="tableWidth"
+        class="name"
+      >
         <template #default="scope">
           <div>
             <a href="" @click.prevent="">{{ scope.row.name }}</a>
@@ -17,13 +22,13 @@
       <el-table-column
         prop="arcana"
         label="阿尔卡纳"
-        min-width="10"
+        :min-width="tableWidth"
         class="arcana"
       />
       <el-table-column
         prop="level"
         label="基础等级"
-        min-width="10"
+        :min-width="tableWidth"
         class="level"
       />
       <el-table-column prop="physics" label="物" min-width="4" />
@@ -47,8 +52,8 @@
       :header-cell-style="setHeaderCell"
       :cell-style="{ 'text-align': 'center' }"
     >
-      <el-table-column prop="characteristic" label="特性" min-width="" />
-      <el-table-column prop="characteristic" label="特性" min-width="" />
+      <el-table-column prop="characteristic" label="特性" />
+      <el-table-column prop="characteristic" label="特性" />
     </el-table>
   </div>
   <div class="skill-page">
@@ -59,15 +64,15 @@
       :header-cell-style="setHeaderCell"
       :cell-style="{ 'text-align': 'center' }"
     >
-      <el-table-column prop="skill" label="技能" min-width="" />
-      <el-table-column prop="skill" label="技能" min-width="" />
+      <el-table-column prop="skill" label="技能" />
+      <el-table-column prop="skill" label="技能" />
     </el-table>
   </div>
 </template>
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
 import { usePersonaStore } from '@/stores/persona'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { type persona } from '@/common/interface'
 // 定义渲染数据
 const personaFusion = ref<persona[]>([])
@@ -77,6 +82,16 @@ const personaStore = usePersonaStore()
 const route = useRoute()
 const id = +route.params.id
 
+// 更改表格宽度
+const tableWidth = ref(10)
+const viewportWidth = ref(window.innerWidth)
+const handleWidth = () => {
+  if (viewportWidth.value < 500) {
+    tableWidth.value = 5
+  } else {
+    tableWidth.value = 10
+  }
+}
 // 表头的回调方法
 const setHeaderCell: any = ({
   columnIndex,
@@ -145,9 +160,14 @@ const getPersonFusion = () => {
 onMounted(() => {
   getPersonFusion()
   console.log('处理了阿尔卡纳列表和面具')
+  window.addEventListener('resize', handleWidth)
+  handleWidth()
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', handleWidth)
 })
 </script>
-<style scoped>
+<style scoped lang="scss">
 .persona-page {
   margin: 5px 0 0 0;
 }
@@ -164,11 +184,5 @@ a:visited {
 
 a:hover {
   color: red;
-}
-
-@media screen and (min-width: 500) {
-  .name .arcana .level {
-    min-width: 5;
-  }
 }
 </style>

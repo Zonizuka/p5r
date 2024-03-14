@@ -9,7 +9,8 @@
           placeholder="阿尔卡纳"
           @select="handleSelect"
           popper-class="sub-arcana"
-      /></span>
+        />
+      </span>
       <span class="persona-name-span">
         <el-autocomplete
           v-model="name"
@@ -123,26 +124,33 @@ onMounted(() => {
     display: flex;
     margin: 10px 10px;
     justify-content: flex-start;
-    .arcana-span {
-      margin-right: 10px;
-      .arcana {
-        width: 20%;
-      }
-    }
+
+    // .arcana-span {
+    //   // margin-right: 10px;
+    //   .arcana {
+    //     width: 20%;
+    //   }
+    // }
+    // .persona-name-span {
+    //   // margin-right: 10px;
+    // }
     .persona-name-span {
-      margin-right: 10px;
+      margin-left: 10px;
     }
     .search-btn {
       background-color: $default-red-color;
       color: white;
       --el-button-hover-border-color: red;
       --el-button-active-border-color: #1b1818;
+      margin-left: 10px;
     }
     .clear-btn {
       background-color: #1b1818;
       color: white;
       --el-button-hover-border-color: red;
       --el-button-active-border-color: rgb(182, 49, 49);
+      margin-left: 10px;
+      margin-right: 15px;
     }
   }
 }
