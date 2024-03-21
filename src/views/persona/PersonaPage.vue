@@ -78,6 +78,8 @@ import { type persona } from '@/common/interface'
 const personaFusion = ref<persona[]>([])
 const personaStore = usePersonaStore()
 
+// 技能列表
+
 // 使用路由模块，获取参数
 const route = useRoute()
 const id = +route.params.id

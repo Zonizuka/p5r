@@ -44,7 +44,7 @@
         min-width="4"
         v-if="isShow"
       />
-      <el-table-column prop="wind" label="风" min-width="4" v-if="false" />
+      <el-table-column prop="wind" label="风" min-width="4" v-if="isShow" />
       <el-table-column
         prop="cognition"
         label="念"
@@ -60,13 +60,12 @@
 
 <script lang="ts" setup>
 // import { getPersonaService } from '@/api/persona'
-// import axios from '@/http/index'
+import axios from '@/http/index'
 import { usePersonaStore } from '@/stores/persona'
 import { ref, onMounted, onUnmounted } from 'vue'
-import PersonaList from '@/json/PersonaList'
 import {
   type persona,
-  // type responseParams,
+  type responseParams,
   type searchList
 } from '@/common/interface'
 // 定义渲染列表
@@ -82,16 +81,25 @@ const getPersonaList = async () => {
   if (personaStore.personas.length > 0) {
     personaList.value = personaStore.personas
   } else {
-    personaStore.setPersona(PersonaList)
+    try {
+      const response = await fetch('/json/PersonaList.json')
+      if (!response.ok) {
+        throw new Error('Failed to load JSON file')
+      }
+      const data = await response.json()
+      personaStore.setPersona(data)
+    } catch (error) {
+      console.error('Error fetching JSON data:', error)
+    }
     personaList.value = personaStore.personas
-    /* let { data } = await axios.request<{ data: responseParams }>('get', '/home')
-    console.log(data)
-    let personas = data.data
-    personaList.value = personas
-    // personaList.value = res.data.data
-    // 将请求的数据存入本地
-    personaStore.setPersona(personas) */
-    console.log('面具列表存储到本地了')
+    // let { data } = await axios.request<{ data: responseParams }>('get', '/home')
+    // console.log(data)
+    // let personas = data.data
+    // personaList.value = personas
+    // // personaList.value = res.data.data
+    // // 将请求的数据存入本地
+    // personaStore.setPersona(personas)
+    // console.log('面具列表存储到本地了')
   }
 }
 
@@ -130,8 +138,10 @@ const search = (arcana: string, name: string) => {
   } else {
     personaList.value = personaStore.personas.filter((item) => {
       return (
-        (arcana === '' || item.arcana.includes(arcana)) &&
-        (name === '' || item.name.includes(name))
+        (arcana === '' || item.arcana.startsWith(arcana)) &&
+        (name === '' ||
+          item.name.includes(name) ||
+          (item.aliasName !== null && item.aliasName.includes(name)))
       )
     })
   }

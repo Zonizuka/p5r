@@ -2,6 +2,7 @@ interface persona {
   id: number
   arcana: string
   name: string
+  aliasName: string | null
   level: number
   skill: string[]
   characteristic: string

@@ -1,0 +1,3418 @@
+[
+  {
+    "aliasName": null,
+    "id": 1,
+    "notes": "",
+    "skillDetail": "对1名敌人造成火焰属性的少量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 2,
+    "notes": "",
+    "skillDetail": "对1名敌人造成火焰属性的中量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 3,
+    "notes": "",
+    "skillDetail": "对1名敌人造成火焰属性的大量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 4,
+    "notes": "",
+    "skillDetail": "对所有敌人造成火焰属性的少量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 5,
+    "notes": "",
+    "skillDetail": "对所有敌人造成火焰属性的中量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 6,
+    "notes": "",
+    "skillDetail": "对所有敌人造成火焰属性的大量伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 7,
+    "notes": "",
+    "skillDetail": "对1名敌人造成火焰属性的特大伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 8,
+    "notes": "",
+    "skillDetail": "对所有敌人造成火焰属性的特大伤害偶尔使敌人陷入燃烧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 9,
+    "notes": "亚斯泰利欧斯专属技能",
+    "skillDetail": "对所有敌人造成火焰属性的特大伤害且有高几率陷入恐惧状态",
+    "type": "火焰"
+  },
+  {
+    "aliasName": null,
+    "id": 10,
+    "notes": "",
+    "skillDetail": "对1名敌人造成冰冻属性的少量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 11,
+    "notes": "",
+    "skillDetail": "对1名敌人造成冰冻属性的中量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 12,
+    "notes": "",
+    "skillDetail": "对1名敌人造成冰冻属性的大量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 13,
+    "notes": "",
+    "skillDetail": "对所有敌人造成冰冻属性的少量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 14,
+    "notes": "",
+    "skillDetail": "对所有敌人造成冰冻属性的中量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 15,
+    "notes": "",
+    "skillDetail": "对所有敌人造成冰冻属性的大量伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 16,
+    "notes": "",
+    "skillDetail": "对1名敌人造成冰冻属性的特大伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 17,
+    "notes": "",
+    "skillDetail": "对所有敌人造成冰冻属性的特大伤害偶尔使敌人陷入冻结状态",
+    "type": "冰冻"
+  },
+  {
+    "aliasName": null,
+    "id": 18,
+    "notes": "",
+    "skillDetail": "对1名敌人造成电击属性的少量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 19,
+    "notes": "",
+    "skillDetail": "对1名敌人造成电击属性的中量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 20,
+    "notes": "",
+    "skillDetail": "对1名敌人造成电击属性的大量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 21,
+    "notes": "",
+    "skillDetail": "对所有敌人造成电击属性的少量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 22,
+    "notes": "",
+    "skillDetail": "对所有敌人造成电击属性的中量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 23,
+    "notes": "",
+    "skillDetail": "对所有敌人造成电击属性的大量伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 24,
+    "notes": "",
+    "skillDetail": "对1名敌人造成电击属性的特大伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 25,
+    "notes": "",
+    "skillDetail": "对所有敌人造成电击属性的特大伤害偶尔使敌人陷入触电状态",
+    "type": "电击"
+  },
+  {
+    "aliasName": null,
+    "id": 26,
+    "notes": "",
+    "skillDetail": "对1名敌人造成疾风属性的少量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 27,
+    "notes": "",
+    "skillDetail": "对1名敌人造成疾风属性的中量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 28,
+    "notes": "",
+    "skillDetail": "对1名敌人造成疾风属性的大量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 29,
+    "notes": "",
+    "skillDetail": "对所有敌人造成疾风属性的少量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 30,
+    "notes": "",
+    "skillDetail": "对所有敌人造成疾风属性的中量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 31,
+    "notes": "",
+    "skillDetail": "对所有敌人造成疾风属性的大量伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 32,
+    "notes": "",
+    "skillDetail": "对1名敌人造成疾风属性的特大伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 33,
+    "notes": "",
+    "skillDetail": "对所有敌人造成疾风属性的特大伤害",
+    "type": "疾风"
+  },
+  {
+    "aliasName": null,
+    "id": 34,
+    "notes": "",
+    "skillDetail": "对1名敌人造成念动属性的少量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 35,
+    "notes": "",
+    "skillDetail": "对1名敌人造成念动属性的中量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 36,
+    "notes": "",
+    "skillDetail": "对1名敌人造成念动属性的大量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 37,
+    "notes": "",
+    "skillDetail": "对所有敌人造成念动属性的少量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 38,
+    "notes": "",
+    "skillDetail": "对所有敌人造成念动属性的中量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 39,
+    "notes": "",
+    "skillDetail": "对所有敌人造成念动属性的大量伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 40,
+    "notes": "",
+    "skillDetail": "对1名敌人造成念动属性的特大伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 41,
+    "notes": "",
+    "skillDetail": "对所有敌人造成念动属性的特大伤害",
+    "type": "念动"
+  },
+  {
+    "aliasName": null,
+    "id": 42,
+    "notes": "",
+    "skillDetail": "对1名敌人造成核热属性的少量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 43,
+    "notes": "",
+    "skillDetail": "对1名敌人造成核热属性的中量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 44,
+    "notes": "",
+    "skillDetail": "对1名敌人造成核热属性的大量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 45,
+    "notes": "",
+    "skillDetail": "对所有敌人造成核热属性的少量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 46,
+    "notes": "",
+    "skillDetail": "对所有敌人造成核热属性的中量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 47,
+    "notes": "",
+    "skillDetail": "对所有敌人造成核热属性的大量伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 48,
+    "notes": "",
+    "skillDetail": "对一名敌人造成核热属性的特大伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 49,
+    "notes": "",
+    "skillDetail": "对所有敌人造成核热属性的特大伤害",
+    "type": "核热"
+  },
+  {
+    "aliasName": null,
+    "id": 50,
+    "notes": "",
+    "skillDetail": "低几率对1名敌人造成祝福属性的即死效果",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 51,
+    "notes": "",
+    "skillDetail": "中几率对1名敌人造成祝福属性的即死效果",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 52,
+    "notes": "",
+    "skillDetail": "低几率对所有敌人造成祝福属性的即死效果",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 53,
+    "notes": "",
+    "skillDetail": "中几率对所有敌人造成祝福属性的即死效果",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 54,
+    "notes": "",
+    "skillDetail": "对1名敌人造成祝福属性的少量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 55,
+    "notes": "",
+    "skillDetail": "对1名敌人造成祝福属性的中量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 56,
+    "notes": "",
+    "skillDetail": "对1名敌人造成祝福属性的大量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 57,
+    "notes": "",
+    "skillDetail": "对所有敌人造成祝福属性的少量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 58,
+    "notes": "",
+    "skillDetail": "对所有敌人造成祝福属性的中量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 59,
+    "notes": "",
+    "skillDetail": "对所有敌人造成祝福属性的大量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 60,
+    "notes": "",
+    "skillDetail": "对1名敌人发动祝福属性攻击使其HP变为1/2",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 61,
+    "notes": "大僧正专属技能",
+    "skillDetail": "高几率对所有敌人造成祝福属性的即死效果",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 62,
+    "notes": "辉夜专属技能",
+    "skillDetail": "对所有敌人造成4～8次祝福属性的少量伤害",
+    "type": "祝福"
+  },
+  {
+    "aliasName": null,
+    "id": 63,
+    "notes": "",
+    "skillDetail": "低几率对1名敌人造成咒怨属性的即死效果",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 64,
+    "notes": "",
+    "skillDetail": "中几率对1名敌人造成咒怨属性的即死效果",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 65,
+    "notes": "",
+    "skillDetail": "低几率对所有敌人造成咒怨属性的即死效果",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 66,
+    "notes": "",
+    "skillDetail": "中几率对所有敌人造成咒怨属性的即死效果",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 67,
+    "notes": "",
+    "skillDetail": "对1名敌人造成咒怨属性的少量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 68,
+    "notes": "",
+    "skillDetail": "对1名敌人造成咒怨属性的中量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 69,
+    "notes": "",
+    "skillDetail": "对1名敌人造成咒怨属性的大量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 70,
+    "notes": "",
+    "skillDetail": "对所有敌人造成咒怨属性的少量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 71,
+    "notes": "",
+    "skillDetail": "对所有敌人造成咒怨属性的中量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 72,
+    "notes": "",
+    "skillDetail": "对所有敌人造成咒怨属性的大量伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 73,
+    "notes": "",
+    "skillDetail": "对1名敌人发动咒怨属性攻击使其HP变为1/2",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 74,
+    "notes": "爱丽丝专属技能",
+    "skillDetail": "高几率对所有敌人造成咒怨属性的即死效果",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 75,
+    "notes": "祸津伊邪那岐专属技能",
+    "skillDetail": "对所有敌人造成咒怨属性的大量伤害几率陷入混乱恐惧绝望状态",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 76,
+    "notes": "月读命专属技能",
+    "skillDetail": "对所有敌人造成咒怨属性的特大伤害",
+    "type": "咒怨"
+  },
+  {
+    "aliasName": null,
+    "id": 77,
+    "notes": "",
+    "skillDetail": "对所有敌人造成万能属性的中量伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 78,
+    "notes": "",
+    "skillDetail": "对所有敌人造成万能属性的大量伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 79,
+    "notes": "",
+    "skillDetail": "对所有敌人造成万能属性的特大伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 80,
+    "notes": "",
+    "skillDetail": "吸取敌人的SP并转变为自己的SP",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 81,
+    "notes": "",
+    "skillDetail": "吸取敌人的HP并转变为自己的HP",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 82,
+    "notes": "",
+    "skillDetail": "使1名敌人变得更容易陷入异常状态",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 83,
+    "notes": "",
+    "skillDetail": "使敌我双方全体变得更容易陷入异常状态",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 84,
+    "notes": "",
+    "skillDetail": "对恐惧状态的敌人造成即死效果",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 85,
+    "notes": "撒旦、撒旦耶尔专属技能",
+    "skillDetail": "对1名敌人造成万能属性的特大伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 86,
+    "notes": "路西法专属技能",
+    "skillDetail": "对所有敌人造成万能属性的特大伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 87,
+    "notes": "哈斯塔专属技能",
+    "skillDetail": "对所有敌人造成万能属性的特大伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 88,
+    "notes": "明智面具三觉技能",
+    "skillDetail": "对1名敌人造成万能属性的超特大伤害对倒地的敌人效果显著",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 89,
+    "notes": "研究所宫殿欲石兑换",
+    "skillDetail": "获得胜利气息的效果通过触手造成全体倒地攻击仅限先制时有效",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 90,
+    "notes": "塔纳托斯专属技能",
+    "skillDetail": "对所有敌人造成万能属性的大量伤害中几率造成即死效果",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 91,
+    "notes": "伊邪那岐大神专属技能",
+    "skillDetail": "对所有敌人造成3次万能属性的大量伤害",
+    "type": "万能"
+  },
+  {
+    "aliasName": null,
+    "id": 92,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 93,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的大量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 94,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 95,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的超特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 96,
+    "notes": "",
+    "skillDetail": "对1名敌人造成高暴击率物理属性的极小伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 97,
+    "notes": "",
+    "skillDetail": "对1名敌人造成高暴击率物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 98,
+    "notes": "",
+    "skillDetail": "对1名敌人造成1～3次物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 99,
+    "notes": "",
+    "skillDetail": "对1名敌人造成3～4次物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 100,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 101,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害在换手时威力上升",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 102,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的超特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 103,
+    "notes": "",
+    "skillDetail": "对1名敌人造成高暴击率物理属性的超特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 104,
+    "notes": "义经专属技能",
+    "skillDetail": "对所有敌人造成8次物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 105,
+    "notes": "巴力专属技能",
+    "skillDetail": "对1名敌人造成3次高命中率物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 106,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的特大伤害且有中几率使其陷入恐惧状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 107,
+    "notes": "",
+    "skillDetail": "1名敌人造成物理属性的中量伤害在被包围时威力上升",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 108,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的大量伤害在换手时威力上升",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 109,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的特大伤害在换手时威力上升",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 110,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 111,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 112,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 113,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的大量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 114,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的超特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 115,
+    "notes": "",
+    "skillDetail": "对所有敌人造成1～3次物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 116,
+    "notes": "",
+    "skillDetail": "对所有敌人造成2～4次物理属性的极小伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 117,
+    "notes": "",
+    "skillDetail": "对所有敌人造成1～2次物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 118,
+    "notes": "",
+    "skillDetail": "对所有敌人造成1～3次物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 119,
+    "notes": "",
+    "skillDetail": "对1名敌人造成2次物理属性的少量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 120,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 121,
+    "notes": "",
+    "skillDetail": "对1名敌人造成3～5次物理属性的极小伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 122,
+    "notes": "",
+    "skillDetail": "对1名敌人造成2～3次物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 123,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害且有中几率使其陷入晕眩状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 124,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害且有中几率使其陷入混乱状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 125,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的少量伤害且有中几率使其陷入恐惧状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 126,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害且有中几率使其陷入遗忘状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 127,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害且有中几率使其陷入狂怒状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 128,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的大量伤害且有中几率使其陷入绝望状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 129,
+    "notes": "",
+    "skillDetail": "对1名敌人造成物理属性的中量伤害且有中几率使其陷入洗脑状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 130,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害且有低几率使其陷入晕眩状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 131,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害且有低几率使其陷入混乱状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 132,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的大量伤害且有低几率使其陷入恐惧状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 133,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的少量伤害且有低几率使其陷入遗忘状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 134,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害且有低几率使其陷入睡眠状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 135,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害且有低几率使其陷入狂怒状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 136,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的中量伤害且有低几率使其陷入绝望状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 137,
+    "notes": "",
+    "skillDetail": "对所有敌人造成物理属性的大量伤害且有低几率使其陷入洗脑状态",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 138,
+    "notes": "明智面具技能",
+    "skillDetail": "对1名敌人造成物理属性的超特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 139,
+    "notes": "摩纳面具三觉技能",
+    "skillDetail": "对所有敌人造成高暴击率物理属性的中量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 140,
+    "notes": "芳泽霞面具三觉技能",
+    "skillDetail": "对1名敌人造成2次物理属性的特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 141,
+    "notes": "伊邪那岐专属技能",
+    "skillDetail": "对1名敌人造成2次高命中率物理属性的大量伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 142,
+    "notes": "阿里亚德涅专属技能",
+    "skillDetail": "对1名敌人造成物理属性的超特大伤害但使用后会使攻击力下降",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 143,
+    "notes": "雅典娜专属技能",
+    "skillDetail": "对所有敌人造成1～2次高暴击率物理属性的特大伤害",
+    "type": "物理"
+  },
+  {
+    "aliasName": null,
+    "id": 144,
+    "notes": "",
+    "skillDetail": "对1名敌人造成枪击属性的中量伤害",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 145,
+    "notes": "",
+    "skillDetail": "对1名敌人造成2次枪击属性的小量伤害",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 146,
+    "notes": "",
+    "skillDetail": "对所有敌人造成3次枪击属性的少量伤害",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 147,
+    "notes": "",
+    "skillDetail": "对1名敌人造成高暴击率枪击属性的特大伤害",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 148,
+    "notes": "",
+    "skillDetail": "对所有敌人造成枪击属性的特大伤害",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 149,
+    "notes": "",
+    "skillDetail": "对1名敌人造成枪击属性的少量伤害且有中几率使其陷入睡眠状态",
+    "type": "枪击"
+  },
+  {
+    "aliasName": null,
+    "id": 150,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入晕眩状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 151,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入晕眩状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 152,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入混乱状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 153,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入混乱状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 154,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入恐惧状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 155,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入恐惧状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 156,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入遗忘状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 157,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入遗忘状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 158,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入睡眠状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 159,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入睡眠状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 160,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入狂怒状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 161,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入狂怒状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 162,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入绝望状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 163,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入绝望状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 164,
+    "notes": "",
+    "skillDetail": "高几率使1名敌人陷入洗脑状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 165,
+    "notes": "",
+    "skillDetail": "中几率使所有敌人陷入洗脑状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 166,
+    "notes": "劳尔专属技能",
+    "skillDetail": "高几率使所有敌人陷入睡眠状态",
+    "type": "异常"
+  },
+  {
+    "aliasName": null,
+    "id": 167,
+    "notes": "",
+    "skillDetail": "使1名同伴的HP少量恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 168,
+    "notes": "",
+    "skillDetail": "使1名同伴的HP中量恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 169,
+    "notes": "",
+    "skillDetail": "使1名同伴的HP完全恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 170,
+    "notes": "",
+    "skillDetail": "使所有同伴的HP少量恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 171,
+    "notes": "",
+    "skillDetail": "使所有同伴的HP中量恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 172,
+    "notes": "",
+    "skillDetail": "使所有同伴的HP完全恢复",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 173,
+    "notes": "",
+    "skillDetail": "使1名同伴从无法战斗的状态恢复HP至50%",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 174,
+    "notes": "",
+    "skillDetail": "使1名同伴从无法战斗的状态恢复HP至最大值",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 175,
+    "notes": "",
+    "skillDetail": "治疗1名同伴除特殊状态之外的异常状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 176,
+    "notes": "",
+    "skillDetail": "治疗所有同伴除特殊状态之外的异常状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 177,
+    "notes": "",
+    "skillDetail": "使所有同伴的HP完全恢复并治疗除特殊状态之外的异常状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 178,
+    "notes": "",
+    "skillDetail": "治疗1名同伴的晕眩•遗忘•睡眠•饥饿状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 179,
+    "notes": "",
+    "skillDetail": "治疗所有同伴的混乱•恐惧•绝望•狂怒•洗脑状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 180,
+    "notes": "",
+    "skillDetail": "治疗1名同伴的混乱•恐惧•绝望•狂怒•洗脑状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 181,
+    "notes": "",
+    "skillDetail": "治疗1名同伴的燃烧•冻结•触电状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 182,
+    "notes": "",
+    "skillDetail": "治疗所有同伴的晕眩•遗忘•睡眠•饥饿状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 183,
+    "notes": "",
+    "skillDetail": "治疗所有同伴的燃烧•冻结•触电状态",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 184,
+    "notes": "俄耳甫斯专属技能",
+    "skillDetail": "使所有同伴的回避率上升HP恢复50%",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 185,
+    "notes": "弥赛亚专属技能",
+    "skillDetail": "使所有同伴的HP完全恢复并消除能力下降效果",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 186,
+    "notes": "俄耳甫斯F专属技能",
+    "skillDetail": "使所有同伴的攻击•防御力与命中•回避率上升HP恢复50%",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 187,
+    "notes": "城堡宫殿欲石兑换",
+    "skillDetail": "HP中量恢复且在3回合间攻击力上升",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 188,
+    "notes": "玛利亚专属技能",
+    "skillDetail": "使所有同伴从无法战斗的状态恢复HP至最大值",
+    "type": "治疗"
+  },
+  {
+    "aliasName": null,
+    "id": 189,
+    "notes": "美术馆宫殿欲石兑换",
+    "skillDetail": "展开防护罩吸收万能属性之外的攻击1次且自动消除自己的弱点",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 190,
+    "notes": "银行宫殿欲石兑换",
+    "skillDetail": "获得玛哈拉库卡加的效果在战斗开始时展开防护罩反弹万能属性之外的攻击",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 191,
+    "notes": "金字塔宫殿欲石兑换",
+    "skillDetail": "获得敏捷诀窍的效果治疗所有同伴除特殊状态之外的异常状态",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 192,
+    "notes": "宇宙基地宫殿欲石兑换",
+    "skillDetail": "获得攻击诀窍的效果使1名同伴的魔法攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 193,
+    "notes": "赌场宫殿欲石兑换",
+    "skillDetail": "获得玛哈斯库卡加的效果在战斗开始时自动发动专心致志",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 194,
+    "notes": "客船宫殿欲石兑换",
+    "skillDetail": "获得防御诀窍的效果使1名同伴的物理攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 195,
+    "notes": "龙司面具三觉技能",
+    "skillDetail": "使所有同伴的物理攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 196,
+    "notes": "新岛真面具三觉技能",
+    "skillDetail": "使所有敌人的攻击•防御力命中•回避率下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 197,
+    "notes": "佑介面具三觉技能",
+    "skillDetail": "使所有同伴的攻击•防御力与命中•回避率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 198,
+    "notes": "高卷杏面具三觉技能",
+    "skillDetail": "使所有同伴的魔法攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 199,
+    "notes": "奥村春面具三觉技能",
+    "skillDetail": "为所有同伴展开障壁反弹物理攻击与魔法攻击",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 200,
+    "notes": "芳泽霞面具技能",
+    "skillDetail": "在3回合间使所有同伴的暴击率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 201,
+    "notes": "警报事故变异习得",
+    "skillDetail": "使自己变得更容易成为敌人的攻击目标",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 202,
+    "notes": "警报事故变异习得",
+    "skillDetail": "使自己变得不易成为敌人的攻击目标",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 203,
+    "notes": "",
+    "skillDetail": "在3回合间使1名同伴的攻击力上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 204,
+    "notes": "",
+    "skillDetail": "在3回合间使1名同伴的防御力上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 205,
+    "notes": "",
+    "skillDetail": "在3回合间使1名同伴的命中•回避率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 206,
+    "notes": "",
+    "skillDetail": "使1名同伴的攻击•防御力与命中•回避率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 207,
+    "notes": "",
+    "skillDetail": "在3回合间使所有同伴的攻击力上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 208,
+    "notes": "",
+    "skillDetail": "在3回合间使所有同伴的防御力上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 209,
+    "notes": "",
+    "skillDetail": "在3回合间使所有同伴的命中•回避率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 210,
+    "notes": "",
+    "skillDetail": "使所有同伴的攻击•防御力与命中•回避率上升仅限被包围时有效",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 211,
+    "notes": "",
+    "skillDetail": "在3回合间使1名敌人的攻击力下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 212,
+    "notes": "",
+    "skillDetail": "在3回合间使1名敌人的防御力下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 213,
+    "notes": "",
+    "skillDetail": "在3回合间使1名敌人的命中•回避率下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 214,
+    "notes": "",
+    "skillDetail": "使1名敌人的攻击•防御力与命中•回避率下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 215,
+    "notes": "",
+    "skillDetail": "在3回合间使所有敌人的攻击力下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 216,
+    "notes": "",
+    "skillDetail": "在3回合间使所有敌人的防御力下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 217,
+    "notes": "",
+    "skillDetail": "在3回合间使所有敌人的命中•回避率下降",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 218,
+    "notes": "",
+    "skillDetail": "消除所有同伴的能力下降效果",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 219,
+    "notes": "",
+    "skillDetail": "消除所有敌人的能力上升效果",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 220,
+    "notes": "",
+    "skillDetail": "使用后的物理攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 221,
+    "notes": "",
+    "skillDetail": "使用后的魔法攻击力变为2倍以上1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 222,
+    "notes": "",
+    "skillDetail": "在3回合间使1名同伴的暴击率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 223,
+    "notes": "",
+    "skillDetail": "在3回合间使敌我双方全体的暴击率上升",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 224,
+    "notes": "",
+    "skillDetail": "为1名同伴展开防护罩反弹物理攻击1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 225,
+    "notes": "",
+    "skillDetail": "为1名同伴展开防护罩反弹魔法攻击1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 226,
+    "notes": "",
+    "skillDetail": "为所有同伴展开防护罩防御即死效果1次",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 227,
+    "notes": "",
+    "skillDetail": "消除所有敌人身上附着的提特拉康效果",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 228,
+    "notes": "",
+    "skillDetail": "消除所有敌人身上附着的玛卡拉康效果",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 229,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着火焰耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 230,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着冰冻耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 231,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着电击耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 232,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着疾风耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 233,
+    "notes": "",
+    "skillDetail": "消除所有敌人的火焰耐性无法消除防炎之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 234,
+    "notes": "",
+    "skillDetail": "消除所有敌人的冰冻耐性无法消除防冰之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 235,
+    "notes": "",
+    "skillDetail": "消除所有敌人的电击耐性无法消除防电之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 236,
+    "notes": "",
+    "skillDetail": "消除所有敌人的疾风耐性无法消除防岚之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 237,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着核热耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 238,
+    "notes": "",
+    "skillDetail": "在3回合间为1名同伴附着念动耐性",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 239,
+    "notes": "",
+    "skillDetail": "消除所有敌人的核热耐性无法消除防核之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 240,
+    "notes": "",
+    "skillDetail": "消除所有敌人的念动耐性无法消除防念之壁",
+    "type": "辅助"
+  },
+  {
+    "aliasName": null,
+    "id": 241,
+    "notes": "双叶面具三觉技能",
+    "skillDetail": "战斗中有机会发动强化•恢复所有同伴的究极支援效果",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 242,
+    "notes": "",
+    "skillDetail": "能以10%几率自动反弹物理攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 243,
+    "notes": "",
+    "skillDetail": "能以15%几率自动反弹物理攻击与其他反击效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 244,
+    "notes": "",
+    "skillDetail": "能以20%几率自动反弹物理攻击与其它反击效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 245,
+    "notes": "警报事故变异习得",
+    "skillDetail": "变得不易陷入燃烧状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 246,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫燃烧状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 247,
+    "notes": "",
+    "skillDetail": "当HP变为0时能自动以HP1的状态复活1次",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 248,
+    "notes": "",
+    "skillDetail": "当HP变为0时能自动以HP全满的状态复活1次",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 249,
+    "notes": "警报事故变异习得",
+    "skillDetail": "变得不易陷入冻结状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 250,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫冻结状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 251,
+    "notes": "",
+    "skillDetail": "受到即死效果攻击时必定会自动以HP1幸存",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 252,
+    "notes": "",
+    "skillDetail": "对火焰属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 253,
+    "notes": "",
+    "skillDetail": "对火焰属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 254,
+    "notes": "",
+    "skillDetail": "对冰冻属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 255,
+    "notes": "",
+    "skillDetail": "对冰冻属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 256,
+    "notes": "",
+    "skillDetail": "对疾风属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 257,
+    "notes": "",
+    "skillDetail": "对疾风属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 258,
+    "notes": "",
+    "skillDetail": "对电击属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 259,
+    "notes": "",
+    "skillDetail": "对电击属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 260,
+    "notes": "",
+    "skillDetail": "对物理属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 261,
+    "notes": "",
+    "skillDetail": "对物理属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 262,
+    "notes": "",
+    "skillDetail": "火焰属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 263,
+    "notes": "",
+    "skillDetail": "火焰属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 264,
+    "notes": "",
+    "skillDetail": "冰冻属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 265,
+    "notes": "",
+    "skillDetail": "冰冻属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 266,
+    "notes": "",
+    "skillDetail": "疾风属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 267,
+    "notes": "",
+    "skillDetail": "疾风属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 268,
+    "notes": "",
+    "skillDetail": "电击属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 269,
+    "notes": "",
+    "skillDetail": "电击属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 270,
+    "notes": "",
+    "skillDetail": "火焰•冰冻•疾风•电击•祝福•咒怨•核热•念动的回避率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 271,
+    "notes": "",
+    "skillDetail": "使用恢复魔法时效果自动变为1.5倍",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 272,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时HP自动恢复2%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 273,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时HP自动恢复4%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 274,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时HP自动恢复6%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 275,
+    "notes": "",
+    "skillDetail": "除即死之外对祝福属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 276,
+    "notes": "",
+    "skillDetail": "除即死之外对咒怨属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 277,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时SP自动恢复3",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 278,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时SP自动恢复5",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 279,
+    "notes": "",
+    "skillDetail": "战斗中轮到行动回合时SP自动恢复7",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 280,
+    "notes": "",
+    "skillDetail": "除即死之外对祝福属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 281,
+    "notes": "",
+    "skillDetail": "除即死之外对咒怨属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 282,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动塔尔卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 283,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动玛哈塔尔卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 284,
+    "notes": "警报事故变异习得",
+    "skillDetail": "变得不易陷入触电状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 285,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫触电状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 286,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动拉库卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 287,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动玛哈拉库卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 288,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动斯库卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 289,
+    "notes": "",
+    "skillDetail": "在战斗开始时自动发动玛哈斯库卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 290,
+    "notes": "警报事故变异习得",
+    "skillDetail": "变得不易陷入饥饿状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 291,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫饥饿状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 292,
+    "notes": "",
+    "skillDetail": "恢复异常状态所需回合自动减半",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 293,
+    "notes": "",
+    "skillDetail": "恢复异常状态所需回合自动变为1回合",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 294,
+    "notes": "",
+    "skillDetail": "使用技能时HP消耗量自动减半",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 295,
+    "notes": "",
+    "skillDetail": "使用技能时SP消耗量自动减半",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 296,
+    "notes": "",
+    "skillDetail": "使受到暴击攻击的几率自动下降",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 297,
+    "notes": "",
+    "skillDetail": "造成暴击攻击的几率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 298,
+    "notes": "",
+    "skillDetail": "使发动攻击的敌人命中率自动大幅下降",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 299,
+    "notes": "",
+    "skillDetail": "使敌人的攻击自动变为必定命中但是伤害减半",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 300,
+    "notes": "",
+    "skillDetail": "在战斗胜利后使自己的HP•SP恢复8%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 301,
+    "notes": "",
+    "skillDetail": "在战斗胜利后使自己的HP•SP完全恢复",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 302,
+    "notes": "",
+    "skillDetail": "即使没有参加战斗也能获得1/4经验值",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 303,
+    "notes": "",
+    "skillDetail": "即使没有参加战斗也能获得1/2经验值",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 304,
+    "notes": "",
+    "skillDetail": "即使没有参加战斗也能获得同等的经验值",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 305,
+    "notes": "阿修罗王专属技能",
+    "skillDetail": "完全免疫混乱•恐惧•狂怒•绝望状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 306,
+    "notes": "",
+    "skillDetail": "对火焰属性攻击的耐性变强当弱点为火焰属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 307,
+    "notes": "",
+    "skillDetail": "无效化火焰属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 308,
+    "notes": "",
+    "skillDetail": "反弹火焰属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 309,
+    "notes": "",
+    "skillDetail": "吸收火焰属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 310,
+    "notes": "",
+    "skillDetail": "对冰冻属性攻击的耐性变强当弱点为冰冻属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 311,
+    "notes": "",
+    "skillDetail": "无效化冰冻属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 312,
+    "notes": "",
+    "skillDetail": "反弹冰冻属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 313,
+    "notes": "",
+    "skillDetail": "吸收冰冻属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 314,
+    "notes": "",
+    "skillDetail": "对疾风属性攻击的耐性变强当弱点为疾风属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 315,
+    "notes": "",
+    "skillDetail": "无效化疾风属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 316,
+    "notes": "",
+    "skillDetail": "反弹疾风属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 317,
+    "notes": "",
+    "skillDetail": "吸收疾风属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 318,
+    "notes": "警报事故变异习得",
+    "skillDetail": "对电击属性攻击的耐性变强当弱点为电击属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 319,
+    "notes": "",
+    "skillDetail": "无效化电击属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 320,
+    "notes": "",
+    "skillDetail": "反弹电击属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 321,
+    "notes": "公开处刑、监禁西布莉获得",
+    "skillDetail": "吸收电击属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 322,
+    "notes": "",
+    "skillDetail": "对祝福属性攻击的耐性变强当弱点为祝福属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 323,
+    "notes": "",
+    "skillDetail": "无效化祝福属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 324,
+    "notes": "",
+    "skillDetail": "反弹祝福属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 325,
+    "notes": "",
+    "skillDetail": "吸收祝福属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 326,
+    "notes": "",
+    "skillDetail": "无效化咒怨属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 327,
+    "notes": "",
+    "skillDetail": "反弹咒怨属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 328,
+    "notes": "",
+    "skillDetail": "吸收咒怨属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 329,
+    "notes": "",
+    "skillDetail": "无效化物理属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 330,
+    "notes": "",
+    "skillDetail": "反弹物理属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 331,
+    "notes": "",
+    "skillDetail": "吸收物理属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 332,
+    "notes": "",
+    "skillDetail": "附着异常状态的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 333,
+    "notes": "",
+    "skillDetail": "哈玛系技能的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 334,
+    "notes": "",
+    "skillDetail": "姆多系技能的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 335,
+    "notes": "",
+    "skillDetail": "附着晕眩的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 336,
+    "notes": "",
+    "skillDetail": "附着混乱的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 337,
+    "notes": "",
+    "skillDetail": "附着恐惧的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 338,
+    "notes": "",
+    "skillDetail": "附着遗忘的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 339,
+    "notes": "",
+    "skillDetail": "附着睡眠的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 340,
+    "notes": "",
+    "skillDetail": "附着狂怒的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 341,
+    "notes": "",
+    "skillDetail": "附着绝望的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 342,
+    "notes": "",
+    "skillDetail": "附着洗脑的成功率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 343,
+    "notes": "",
+    "skillDetail": "变得不易陷入晕眩状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 344,
+    "notes": "",
+    "skillDetail": "变得不易陷入混乱状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 345,
+    "notes": "",
+    "skillDetail": "变得不易陷入恐惧状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 346,
+    "notes": "",
+    "skillDetail": "变得不易陷入遗忘状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 347,
+    "notes": "",
+    "skillDetail": "变得不易陷入睡眠状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 348,
+    "notes": "",
+    "skillDetail": "变得不易陷入绝望状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 349,
+    "notes": "",
+    "skillDetail": "变得不易陷入洗脑状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 350,
+    "notes": "",
+    "skillDetail": "所有攻击的伤害上升与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 351,
+    "notes": "",
+    "skillDetail": "完全免疫晕眩状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 352,
+    "notes": "",
+    "skillDetail": "完全免疫混乱状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 353,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫恐惧状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 354,
+    "notes": "",
+    "skillDetail": "完全免疫遗忘状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 355,
+    "notes": "",
+    "skillDetail": "完全免疫睡眠状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 356,
+    "notes": "",
+    "skillDetail": "完全免疫狂怒状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 357,
+    "notes": "警报事故变异习得",
+    "skillDetail": "完全免疫绝望状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 358,
+    "notes": "",
+    "skillDetail": "完全免疫洗脑状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 359,
+    "notes": "玛利亚专属技能",
+    "skillDetail": "战斗中轮到行动时自动恢复15%HP以及15SP",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 360,
+    "notes": "玛利亚专属技能",
+    "skillDetail": "战斗中轮到行动时自动恢复25%HP",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 361,
+    "notes": "",
+    "skillDetail": "燃烧的附着率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 362,
+    "notes": "",
+    "skillDetail": "冻结的附着率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 363,
+    "notes": "",
+    "skillDetail": "触电的附着率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 364,
+    "notes": "",
+    "skillDetail": "在先制遇敌时造成暴击攻击的几率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 365,
+    "notes": "",
+    "skillDetail": "在被包围时造成暴击攻击的几率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 366,
+    "notes": "",
+    "skillDetail": "在被包围时除万能属性之外受到的攻击命中率大幅下降",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 367,
+    "notes": "",
+    "skillDetail": "在先制遇敌后轮到行动回合时HP恢复5%SP恢复10",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 368,
+    "notes": "",
+    "skillDetail": "通过换手获得行动回合时发动斯库卡加",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 369,
+    "notes": "",
+    "skillDetail": "雨天•下雪或预警时全属性相克的回避率自动大幅上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 370,
+    "notes": "",
+    "skillDetail": "雨天•下雪或预警时异常状态攻击的附着率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 371,
+    "notes": "",
+    "skillDetail": "枪击属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 372,
+    "notes": "",
+    "skillDetail": "枪击属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 373,
+    "notes": "",
+    "skillDetail": "枪击属性技能的暴击率自动上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 374,
+    "notes": "莉莉丝普通电椅出技能卡",
+    "skillDetail": "无效化核热属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 375,
+    "notes": "",
+    "skillDetail": "反弹核热属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 376,
+    "notes": "",
+    "skillDetail": "吸收核热属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 377,
+    "notes": "",
+    "skillDetail": "对念动属性攻击的耐性变强当弱点为念动属性时则消除弱点",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 378,
+    "notes": "迦梨普通电椅出技能卡",
+    "skillDetail": "无效化念动属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 379,
+    "notes": "",
+    "skillDetail": "反弹念动属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 380,
+    "notes": "",
+    "skillDetail": "吸收念动属性的攻击",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 381,
+    "notes": "",
+    "skillDetail": "核热属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 382,
+    "notes": "",
+    "skillDetail": "核热属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 383,
+    "notes": "",
+    "skillDetail": "念动属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 384,
+    "notes": "",
+    "skillDetail": "念动属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 385,
+    "notes": "",
+    "skillDetail": "对核热属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 386,
+    "notes": "",
+    "skillDetail": "对核热属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 387,
+    "notes": "",
+    "skillDetail": "对念动属性攻击的回避率上升",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 388,
+    "notes": "",
+    "skillDetail": "对念动属性攻击的回避率大幅上升与识破的效果不累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 389,
+    "notes": "",
+    "skillDetail": "祝福属性的攻击力自动上升25%{00",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 390,
+    "notes": "",
+    "skillDetail": "祝福属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 391,
+    "notes": "",
+    "skillDetail": "咒怨属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 392,
+    "notes": "",
+    "skillDetail": "咒怨属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 393,
+    "notes": "公开处刑获取",
+    "skillDetail": "全属性的魔法攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 394,
+    "notes": "",
+    "skillDetail": "变得不易陷入所有异常状态",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 395,
+    "notes": "",
+    "skillDetail": "万能属性的攻击力自动上升25%",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 396,
+    "notes": "公开处刑获取",
+    "skillDetail": "万能属性的攻击力自动上升50%与强化的效果可累积",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 397,
+    "notes": "公开处刑获取",
+    "skillDetail": "通过换手获得行动回合时SP恢复20",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 398,
+    "notes": "全能真球饰品",
+    "skillDetail": "使火焰•冰冻•疾风•电击念动•核热•祝福•咒怨的属性相克自动转为无效",
+    "type": "被动"
+  },
+  {
+    "aliasName": null,
+    "id": 399,
+    "notes": "",
+    "skillDetail": "攻击弱点时伤害上升50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 400,
+    "notes": "",
+    "skillDetail": "使用恢复技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 401,
+    "notes": "",
+    "skillDetail": "使用恢复技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 402,
+    "notes": "",
+    "skillDetail": "使用辅助技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 403,
+    "notes": "",
+    "skillDetail": "使用辅助技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 404,
+    "notes": "",
+    "skillDetail": "附着异常状态的成功概率上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 405,
+    "notes": "",
+    "skillDetail": "对倒地的敌人电击属性的触电附着率增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 406,
+    "notes": "",
+    "skillDetail": "对倒地的敌人异常状态的附着率增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 407,
+    "notes": "",
+    "skillDetail": "在自己发动1MORE的行动中冰冻属性的冻结附着率增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 408,
+    "notes": "",
+    "skillDetail": "使用魔法技能攻击时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 409,
+    "notes": "",
+    "skillDetail": "以1名敌人为对象的魔法技能攻击力自动上升20%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 410,
+    "notes": "",
+    "skillDetail": "以所有敌人为对象的魔法技能攻击力自动上升20%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 411,
+    "notes": "",
+    "skillDetail": "物理属性的攻击力自动上升20%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 412,
+    "notes": "",
+    "skillDetail": "物理属性的攻击力自动上升30%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 413,
+    "notes": "",
+    "skillDetail": "自己发动的反击造成的反弹伤害加倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 414,
+    "notes": "",
+    "skillDetail": "自己发动的反击造成的反弹伤害变为3倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 415,
+    "notes": "",
+    "skillDetail": "变得不易陷入所有异常状态",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 416,
+    "notes": "",
+    "skillDetail": "完全免疫所有异常状态",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 417,
+    "notes": "",
+    "skillDetail": "在接受换手后的行动中伤害上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 418,
+    "notes": "",
+    "skillDetail": "在接受换手后的行动中伤害大幅上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 419,
+    "notes": "",
+    "skillDetail": "在接受换手后的行动中异常状态附着率增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 420,
+    "notes": "",
+    "skillDetail": "在接受换手后的行动中燃烧附着率增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 421,
+    "notes": "",
+    "skillDetail": "在接受换手后的行动中能使用被包围时专用的技能",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 422,
+    "notes": "",
+    "skillDetail": "在没被包围时的行动中也能使用被包围时专用的技能",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 423,
+    "notes": "",
+    "skillDetail": "无论实际的天气为何皆视为雨天•下雪•预警状态",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 424,
+    "notes": "",
+    "skillDetail": "TECHNICAL造成的伤害上升25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 425,
+    "notes": "",
+    "skillDetail": "TECHNICAL造成的伤害上升50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 426,
+    "notes": "",
+    "skillDetail": "依敌人的异常状态数使攻击力上升25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 427,
+    "notes": "",
+    "skillDetail": "即死技能的成功率上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 428,
+    "notes": "",
+    "skillDetail": "即死技能的成功率大幅上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 429,
+    "notes": "",
+    "skillDetail": "使用火焰技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 430,
+    "notes": "",
+    "skillDetail": "使用火焰技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 431,
+    "notes": "",
+    "skillDetail": "使用冰冻技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 432,
+    "notes": "",
+    "skillDetail": "使用冰冻技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 433,
+    "notes": "",
+    "skillDetail": "使用电击技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 434,
+    "notes": "",
+    "skillDetail": "使用电击技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 435,
+    "notes": "",
+    "skillDetail": "使用疾风技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 436,
+    "notes": "",
+    "skillDetail": "使用疾风技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 437,
+    "notes": "",
+    "skillDetail": "使用念动技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 438,
+    "notes": "",
+    "skillDetail": "使用念动技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 439,
+    "notes": "",
+    "skillDetail": "使用核热技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 440,
+    "notes": "",
+    "skillDetail": "使用核热技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 441,
+    "notes": "",
+    "skillDetail": "使用祝福技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 442,
+    "notes": "",
+    "skillDetail": "使用祝福技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 443,
+    "notes": "",
+    "skillDetail": "使用咒怨技能时SP消耗量自动减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 444,
+    "notes": "",
+    "skillDetail": "使用咒怨技能时SP消耗量自动减少75%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 445,
+    "notes": "",
+    "skillDetail": "对自己发动的HP恢复效果自动上升50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 446,
+    "notes": "",
+    "skillDetail": "对自己发动的HP恢复效果自动变为2倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 447,
+    "notes": "",
+    "skillDetail": "对自己发动的SP恢复效果自动上升50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 448,
+    "notes": "",
+    "skillDetail": "对自己发动的SP恢复效果自动变为2倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 449,
+    "notes": "对自己也有效",
+    "skillDetail": "自己对同伴发动的辅助效果增加1回合",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 450,
+    "notes": "对自己也有效",
+    "skillDetail": "自己对同伴发动的辅助效果增加2回合",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 451,
+    "notes": "",
+    "skillDetail": "对自己发动的辅助效果增加1回合",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 452,
+    "notes": "",
+    "skillDetail": "对自己发动的辅助效果增加2回合",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 453,
+    "notes": "",
+    "skillDetail": "对自己发动的吸收效果与吸血·吸魔效果加倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 454,
+    "notes": "",
+    "skillDetail": "当自己的弱点遭到攻击时伤害减轻",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 455,
+    "notes": "",
+    "skillDetail": "高概率回避陷入异常状态的敌人的攻击",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 456,
+    "notes": "隐藏效果开场自动具有专心致志",
+    "skillDetail": "蓄力与专心致志的效果变为3倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 457,
+    "notes": "",
+    "skillDetail": "即死效果技能SP消耗量变为零",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 458,
+    "notes": "宝魔特性",
+    "skillDetail": "合体时可以获得蕴藏在宝魔之中的特性",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 459,
+    "notes": "双叶面具特性",
+    "skillDetail": "以总攻击作为最后一击时使所有同伴的HP恢复25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 460,
+    "notes": "双叶面具三觉特性",
+    "skillDetail": "以总攻击作为最后一击时使所有同伴的HP完全恢复",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 461,
+    "notes": "龙司面具特性",
+    "skillDetail": "偶尔使同伴的物理攻击力上升40%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 462,
+    "notes": "龙司面具三觉特性",
+    "skillDetail": "偶尔使同伴的物理攻击力上升80%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 463,
+    "notes": "摩纳面具特性",
+    "skillDetail": "在战斗中我方使用的恢复技能效果增加",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 464,
+    "notes": "摩纳面具三觉特性",
+    "skillDetail": "在战斗中我方使用的恢复技能效果增加且偶尔使SP消耗量减少",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 465,
+    "notes": "高卷杏面具特性",
+    "skillDetail": "偶尔使同伴的攻击魔法SP消耗量减少",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 466,
+    "notes": "高卷杏面具三觉特性",
+    "skillDetail": "偶尔使同伴的攻击魔法SP消耗量减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 467,
+    "notes": "佑介面具特性",
+    "skillDetail": "我方遭到物理攻击时有机会能回避攻击",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 468,
+    "notes": "佑介面具三觉特性",
+    "skillDetail": "我方遭到物理攻击时有更大的机会能回避攻击",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 469,
+    "notes": "新岛真面具特性",
+    "skillDetail": "我方技能的燃烧•冻结•触电附着率上升25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 470,
+    "notes": "新岛真面具三觉特性",
+    "skillDetail": "我方技能的燃烧•冻结•触电附着率上升25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 471,
+    "notes": "奥村春面具特性",
+    "skillDetail": "我方陷入异常状态的概率减少25%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 472,
+    "notes": "奥村春面具三觉特性",
+    "skillDetail": "我方陷入异常状态的概率减少50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 473,
+    "notes": "明智面具特性",
+    "skillDetail": "有机会使我方发动的辅助魔法SP消耗量减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 474,
+    "notes": "明智面具三觉特性",
+    "skillDetail": "有机会使我方发动的辅助•万能魔法SP消耗量减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 475,
+    "notes": "芳泽霞面具特性",
+    "skillDetail": "我方遭到攻击时有机会避免倒地",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 476,
+    "notes": "芳泽霞面具三觉特性",
+    "skillDetail": "我方遭到攻击时有更大的机会避免倒地",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 477,
+    "notes": "亚斯泰利欧斯专属特性",
+    "skillDetail": "自己的HP所剩不多时攻击的伤害上升",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 478,
+    "notes": "辉夜专属特性",
+    "skillDetail": "自己发动的反击造成的反弹伤害变为3倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 479,
+    "notes": "祸津伊邪那岐专属特性",
+    "skillDetail": "依敌人的异常状态数使攻击力上升40%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 480,
+    "notes": "弥赛亚专属特性",
+    "skillDetail": "对自己发动的HP•SP恢复效果自动变为2倍",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 481,
+    "notes": "阿里亚德涅专属特性",
+    "skillDetail": "在接受换手后的行动中消耗道具的数量不会减少",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 482,
+    "notes": "塔纳托斯专属特性",
+    "skillDetail": "在接受换手后的行动中SP消耗量减半",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 483,
+    "notes": "俄耳甫斯专属特性",
+    "skillDetail": "HP归0时有4次机会能使HP自动恢复至1",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 484,
+    "notes": "月读命专属特性",
+    "skillDetail": "在自己发动1MORE的行动中攻击力上升50%",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 485,
+    "notes": "伊邪那岐专属特性",
+    "skillDetail": "使同伴的人格面具更加容易发动特性",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 486,
+    "notes": "劳尔专属特性",
+    "skillDetail": "使同伴更加容易发动追击•打入",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 487,
+    "notes": "雅典娜专属特性",
+    "skillDetail": "在自己的1MORE行动中HP•SP消耗量变为零",
+    "type": "特性"
+  },
+  {
+    "aliasName": null,
+    "id": 488,
+    "notes": "伊邪那岐大神专属特性",
+    "skillDetail": "根据囚犯名册的登录率提升攻击力与防御力",
+    "type": "特性"
+  }
+]
