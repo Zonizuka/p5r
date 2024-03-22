@@ -59,15 +59,10 @@
 </template>
 
 <script lang="ts" setup>
-// import { getPersonaService } from '@/api/persona'
-import axios from '@/http/index'
+import { getPersonaList } from '@/api/persona'
 import { usePersonaStore } from '@/stores/persona'
 import { ref, onMounted, onUnmounted } from 'vue'
-import {
-  type persona,
-  type responseParams,
-  type searchList
-} from '@/common/interface'
+import { type persona, type searchList } from '@/common/interface'
 // 定义渲染列表
 const personaList = ref<persona[]>([])
 // 是否展示后面内容
@@ -77,31 +72,6 @@ const viewportWidth = ref(window.innerWidth)
 const personaStore = usePersonaStore()
 // 发送请求，若本地已有数据，直接获取不进行请求
 // 读取js文件模块
-const getPersonaList = async () => {
-  if (personaStore.personas.length > 0) {
-    personaList.value = personaStore.personas
-  } else {
-    try {
-      const response = await fetch('/json/PersonaList.json')
-      if (!response.ok) {
-        throw new Error('Failed to load JSON file')
-      }
-      const data = await response.json()
-      personaStore.setPersona(data)
-    } catch (error) {
-      console.error('Error fetching JSON data:', error)
-    }
-    personaList.value = personaStore.personas
-    // let { data } = await axios.request<{ data: responseParams }>('get', '/home')
-    // console.log(data)
-    // let personas = data.data
-    // personaList.value = personas
-    // // personaList.value = res.data.data
-    // // 将请求的数据存入本地
-    // personaStore.setPersona(personas)
-    // console.log('面具列表存储到本地了')
-  }
-}
 
 // 获得面具列表后，将面具列表里的personaList提取出来
 const getArcanaList = () => {
@@ -206,7 +176,9 @@ defineExpose({
 })
 
 onMounted(() => {
-  getPersonaList()
+  getPersonaList().then((result) => {
+    personaList.value = result
+  })
   console.log('发送请求了')
   getArcanaList()
   console.log('处理了阿尔卡纳列表和面具')
