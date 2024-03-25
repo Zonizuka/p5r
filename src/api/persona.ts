@@ -11,7 +11,7 @@ export const getPersonaList = async () => {
     return personaStore.personas
   } else {
     try {
-      const response = await fetch('/json/PersonaList.json')
+      const response = await fetch('./json/PersonaList.json')
       if (!response.ok) {
         throw new Error('Failed to load JSON file')
       }

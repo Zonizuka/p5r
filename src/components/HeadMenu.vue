@@ -16,10 +16,10 @@
         router
       >
         <el-menu-item class="menu-item" index="/home">面具一览</el-menu-item>
-        <el-menu-item class="menu-item" index="skill">技能列表</el-menu-item>
-        <el-menu-item class="menu-item" index="path">路线查询</el-menu-item>
-        <el-menu-item class="menu-item" index="theory">合成原理</el-menu-item>
-        <el-menu-item class="menu-item" index="recommend"
+        <el-menu-item class="menu-item" index="/skill">技能列表</el-menu-item>
+        <el-menu-item class="menu-item" index="/path">路线查询</el-menu-item>
+        <el-menu-item class="menu-item" index="/theory">合成原理</el-menu-item>
+        <el-menu-item class="menu-item" index="/recommend"
           >面具推荐</el-menu-item
         >
       </el-menu>

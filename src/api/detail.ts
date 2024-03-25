@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @Version: 1.0
+ * @Author: pj
+ * @Date: 2024-03-23 18:13:02
+ * @LastEditors: pj
+ * @LastEditTime: 2024-03-24 17:23:53
+ */
 import { usePersonaDetailStore } from '@/stores/personaDetail'
 
 // 此文件包含了面具所需的技能数据、合成数据、技能详情
@@ -7,7 +15,7 @@ export const getPersonaDetail = async () => {
     return personaDetailStore.personaDetails
   } else {
     try {
-      const response = await fetch('/json/PersonaDetail.json')
+      const response = await fetch('./json/PersonaDetail.json')
       if (!response.ok) {
         throw new Error('Failed to load PersonaDetail JSON file')
       }
@@ -25,7 +33,7 @@ export const getSkill = async () => {
     return personaDetailStore.skills
   } else {
     try {
-      const response = await fetch('/json/Skill.json')
+      const response = await fetch('./json/Skill.json')
       if (!response.ok) {
         throw new Error('Failed to load Skill JSON file')
       }
@@ -43,7 +51,7 @@ export const getFusion = async () => {
     return personaDetailStore.fusions
   } else {
     try {
-      const response = await fetch('/json/Fusion.json')
+      const response = await fetch('./json/Fusion.json')
       if (!response.ok) {
         throw new Error('Failed to load Fusion JSON file')
       }

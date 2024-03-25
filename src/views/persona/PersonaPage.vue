@@ -7,12 +7,7 @@
       :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="setCellStyle"
     >
-      <el-table-column
-        prop="name"
-        label="名称"
-        :min-width="tableWidth"
-        class="name"
-      >
+      <el-table-column label="名称" :min-width="tableWidth" class="name">
         <template #default="scope">
           <div>
             <a href="" @click.prevent="">{{ scope.row.name }}</a>
@@ -60,7 +55,7 @@
       />
     </el-table>
   </div>
-  <div class="skill-page">
+  <div class="skill">
     <el-table
       :data="personaPageSkill"
       border
@@ -72,6 +67,28 @@
       <el-table-column prop="skillDetail" label="技能" min-width="71" />
     </el-table>
   </div>
+  <div class="fusion-page">
+    <el-table
+      :data="personaPageFusion"
+      border
+      style="width: 100%"
+      :header-cell-style="{ 'text-align': 'center' }"
+      :cell-style="{ 'text-align': 'center' }"
+    >
+      <el-table-column label="反向合成表">
+        <template #default="scope">
+          <div>
+            <span v-for="(item, index) in scope.row" :key="index">
+              <a href="" @click.prevent="refresh(item.id)">
+                {{ item.arcanaName + 'LV' + item.level + item.name }}
+              </a>
+              <span v-if="index < scope.row.length - 1"> + </span>
+            </span>
+          </div>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
 </template>
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
@@ -81,7 +98,6 @@ import {
   type personaSkill,
   type personaDetail,
   type personaCharacteristic,
-  type fusionMaterial,
   type subDetailArray
 } from '@/common/interface'
 import { getPersonaList } from '@/api/persona'
@@ -91,13 +107,14 @@ import { usePersonaDetailStore } from '@/stores/personaDetail'
 const personaPage = ref<persona[]>([])
 const personaPageCharacteristic = ref<personaCharacteristic[]>([])
 const personaPageSkill = ref<personaSkill[]>([])
+const personaPageFusion = ref<personaDetail[][]>([])
 
 // 使用仓库
 const personaDetailStore = usePersonaDetailStore()
 
 // 使用路由模块，获取参数
 const route = useRoute()
-const id = +route.params.id
+let id = +route.params.id
 
 // 更改表格宽度
 const tableWidth = ref(10)
@@ -203,43 +220,159 @@ const getPersonaSkill = () => {
   })
 }
 
+const subArray = {} as subDetailArray
 const getPersonaFusion = () => {
   getFusion().then((fusions) => {
     const personaDetail = personaDetailStore.personaDetails[id - 1]
     const resultType = personaDetail.resultType
-    // 若合成类型为1，则代表可以由二体合成而来
+    const resultArray = [] as personaDetail[][]
+    // 若合成类型为1，则代表可以由二体合成而来，为2代表有固定配方，为3代表无法被合成
     if (resultType == 1) {
       // 获取合成数据
       const fusion = fusions[personaDetail.arcana - 1].arcanaFusion
-      const subArray = {} as subDetailArray
+      // 开始进行合成计算,先给区间等级初始值,再遍历第一个子序列
+      // 上界默认为-1，下界默认为1000，如果有能作为二体合成的面具且大于当前面具等级，更新为当前面具等级
+      const interval = [1, 1000]
+      // 找出当前面具阿尔卡纳的结果等级区间
+      const subSelfArr = searchSubArray(personaDetail.arcana)
+      const selfLevel = personaDetail.level
+      for (let j = 0; j < subSelfArr.length; j++) {
+        // 查找策略，找到的区间面具必须resultType == 1才行
+        if (subSelfArr[j].level < selfLevel && subSelfArr[j].resultType == 1) {
+          interval[0] = subSelfArr[j].level
+        } else if (
+          subSelfArr[j].level > selfLevel &&
+          subSelfArr[j].resultType == 1
+        ) {
+          interval[1] = selfLevel
+          break
+        }
+      }
+      console.log('interval', interval)
       for (let i = 0; i < fusion.length - 1; i += 2) {
         // 查找
         const arcana1 = fusion[i]
         const arcana2 = fusion[i + 1]
         // 用hashmap存子序列，提高效率，避免重复查找
-        var subPersonaArr1 = []
-        var subPersonaArr2 = []
-        if (arcana1 in subArray) {
-          subPersonaArr1 = subArray[arcana1]
-        } else {
-          subPersonaArr1 = personaDetailStore.personaDetails.slice(
-            subArrayIndex[arcana1 - 1][0],
-            subArrayIndex[arcana1 - 1][1]
-          )
-          subArray[arcana1] = subPersonaArr1
+        const subPersonaArr1 = searchSubArray(arcana1)
+        const subPersonaArr2 = searchSubArray(arcana2)
+
+        for (let j = 0; j < subPersonaArr1.length; j++) {
+          // 用第一个子序列中的每个面具等级和当前面具等级进行计算
+          // 先判断第一个子序列中的面具fusionType是否小于等于3，如果为3即宝魔，必须persona2也为3
+          const persona1 = subPersonaArr1[j]
+          if (persona1.fusionType <= 3) {
+            const temp = [
+              (interval[0] - 1) * 2 - persona1.level,
+              (interval[1] - 1) * 2 - persona1.level
+            ]
+            for (let k = 0; k < subPersonaArr2.length; k++) {
+              const persona2 = subPersonaArr2[k]
+              // 可能是固定配方，如果遇到就跳过
+              if (
+                persona1.fusionType === 2 &&
+                persona2.fusionType === 2 &&
+                fixed[persona1.id] === persona2.id
+              ) {
+                continue
+              }
+              // 如果只有一方为宝魔，跳过
+              if (
+                (persona1.fusionType === 3 && persona2.fusionType !== 3) ||
+                (persona1.fusionType !== 3 && persona2.fusionType === 3)
+              )
+                continue
+              // 左开右闭区间
+              if (persona2.level > temp[0] && persona2.level <= temp[1]) {
+                // console.log(persona1, persona2)
+                resultArray.push([persona1, persona2])
+              }
+            }
+          }
         }
-        if (arcana2 in subArray) {
-          subPersonaArr2 = subArray[arcana2]
-        } else {
-          subPersonaArr2 = personaDetailStore.personaDetails.slice(
-            subArrayIndex[arcana2 - 1][0],
-            subArrayIndex[arcana2 - 1][1]
-          )
-          subArray[arcana2] = subPersonaArr2
-        }
-        // 开始进行合成计算
       }
+      // 该查找同阿尔卡纳的面具了，从该阿尔卡纳序列中分离出该面具，无法参与合成的不用考虑
+      const removedArray: personaDetail[] = subSelfArr.filter(
+        (personaDetail) =>
+          personaDetail.id !== id && personaDetail.fusionType <= 2
+      )
+      console.log('subSelfArr', subSelfArr)
+      console.log('removedArray', removedArray)
+      console.log('id', id)
+      for (let i = 0; i < removedArray.length; i++) {
+        const persona1 = removedArray[i]
+        for (let j = i + 1; j < removedArray.length; j++) {
+          const persona2 = removedArray[j]
+          if (persona1.level < selfLevel && persona2.level < selfLevel) continue
+          // 有可能为固定配方，奈比洛斯和贝利亚
+          if (fixed[persona1.id] === persona2.id) continue
+          // 找当前面具的等级区间，比它自身高一阶的面具，不能包含素材面具，也不包含固定配方
+          if (persona2.level > selfLevel) {
+            // 从自身开始出发寻找
+            let index = j
+            let upper = persona2.level
+            while (index >= 0 && removedArray[index].level > selfLevel) {
+              // 非素材面具
+              if (
+                index !== i &&
+                index !== j &&
+                removedArray[index].resultType == 1
+              ) {
+                upper = removedArray[index].level
+              }
+              index--
+            }
+            // 如果素材面具为区间上界，就可等于
+            let result = (persona1.level + persona2.level) / 2 + 1
+            let flag = upper === persona2.level
+            if (result >= selfLevel && result <= upper && flag) {
+              resultArray.push([persona1, persona2])
+            } else if (result >= selfLevel && result < upper && !flag) {
+              resultArray.push([persona1, persona2])
+            }
+          }
+        }
+      }
+      console.log('resultArray', resultArray)
+    } // resultType为2说明有固定配方
+    else if (resultType == 2) {
+      // 有固定配方就看fusionList
+      const fusionArray = personaDetail.fusionList
+      if (fusionArray === undefined) throw console.error('未添加合成信息!')
+      let fixedFusionList = []
+      for (let i = 0; i < fusionArray.length; i++) {
+        fixedFusionList.push(
+          personaDetailStore.personaDetails[fusionArray[i] - 1]
+        )
+      }
+      resultArray.push(fixedFusionList)
+      console.log('resultArray', resultArray)
+    } else if (resultType == 3) {
+      resultArray.push()
     }
+    personaPageFusion.value = resultArray
+  })
+}
+
+// 查找子序列，传入arcana的id
+const searchSubArray = (id: number) => {
+  if (id in subArray) {
+    return subArray[id]
+  } else {
+    return personaDetailStore.personaDetails.slice(
+      subArrayIndex[id - 1][0],
+      subArrayIndex[id - 1][1]
+    )
+  }
+}
+
+const refresh = (newId: number) => {
+  id = newId
+  // 先获取面具，注意异步顺序
+  getPersonaList().then((result) => {
+    personaPage.value = [result[id - 1]]
+    getPersonaSkill()
+    getPersonaFusion()
   })
 }
 
@@ -250,7 +383,6 @@ onMounted(() => {
     getPersonaSkill()
     getPersonaFusion()
   })
-  // 获取技能特性数据
 
   window.addEventListener('resize', handleWidth)
   handleWidth()
@@ -285,13 +417,19 @@ const subArrayIndex = [
   [213, 222],
   [222, 230]
 ]
+// 固定配方
+const fixed: { [index: number]: number } = {
+  25: 51,
+  163: 164,
+  69: 210
+}
 </script>
 <style scoped lang="scss">
 .persona-page {
   margin: 5px 0 0 0;
 }
 
-.skill-page .characteristic-page {
+.skill .characteristic-page {
   margin: 5px 0 0 0;
 }
 

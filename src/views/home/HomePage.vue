@@ -167,4 +167,7 @@ onMounted(() => {
     background-color: $default-red-color;
   }
 }
+.el-table .cell {
+  overflow: visible;
+}
 </style>
