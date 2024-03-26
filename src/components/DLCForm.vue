@@ -1,13 +1,11 @@
 <template>
   <div class="dlc-form">
     <span style="color: white">勾选已有DLC面具
-    <label>
       <input type="radio" value=25 v-model="isSelectAll" >全选
       <input type="radio" value=0 v-model="isSelectAll">反选
-    </label>
     </span>
     <p></p>
-    <label style="color: white">
+    <form style="color: white">
       <input type="checkbox" value=3 v-model="isSelect" class="dlc-persona">俄耳甫斯(f)
       <input type="checkbox" value=4 v-model="isSelect" class="dlc-persona">俄耳甫斯(f)·贼神<br>
       <input type="checkbox" value=6 v-model="isSelect" class="dlc-persona">伊邪纳岐
@@ -33,7 +31,7 @@
       <input type="checkbox" value=212 v-model="isSelect" class="dlc-persona">弥赛亚·贼神<br>
       <input type="checkbox" value=231 v-model="isSelect" class="dlc-persona">伊邪那岐大神
       <input type="checkbox" value=232 v-model="isSelect" class="dlc-persona">伊邪那岐大神·贼神<br>
-    </label>
+    </form>
   </div>
 </template>
 
@@ -43,12 +41,23 @@ const origin = [3,4,6,7,8,9,15,78,79,106,109,112,113,144,145,168,169,186,189,192
 const isSelect = ref<number[]>([])
 const isSelectAll = ref(0)
 
-const handleChange = () => {
+const handleSelect = () => {
   isSelectAll.value = isSelect.value.length
 }
 
-const watchSelect = watch(isSelect, handleChange, {
+const watchSelect = watch(isSelect, handleSelect, {
   deep: true,
+  immediate: false
+})
+
+const handleAll= () => {
+  if (isSelectAll.value == origin.length) {
+    isSelect.value = origin
+  }else if(isSelectAll.value == 0) {
+    isSelect.value = []
+  }
+}
+const watchSelectAll = watch(isSelectAll, handleAll, {
   immediate: false
 })
 
@@ -58,6 +67,7 @@ onMounted(() => {
 }),
 
 onBeforeMount(() => {
+  watchSelect
 })
 
 </script>
