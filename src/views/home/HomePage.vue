@@ -38,6 +38,7 @@ import PersonaArticle from './PersonaArticle.vue'
 import { type searchList } from '@/common/interface'
 // 导入persona的store
 import { usePersonaStore } from '@/stores/persona'
+import { getPersonaList } from '@/api/persona'
 
 const personaStore = usePersonaStore()
 
@@ -98,10 +99,32 @@ const createFilter = (queryString: string) => {
   }
 }
 
+// 获得面具列表后，将面具列表里的personaList提取出来
 // 加载自动补全框的数据
 const loadData = () => {
-  arcanaList.value = personaStore.arcanaList
-  nameList.value = personaStore.nameList
+  getPersonaList().then(res => {
+    const uniqueArcana: searchList[] = []
+    const uniqueName: searchList[] = []
+    // 创建一个临时数组
+    let tempArcanaArr: string[] = []
+    let tempNameArr: string[] = []
+    for (const item of res) {
+      let arcana = item.arcana
+      let name = item.name
+      if (!tempArcanaArr.includes(arcana)) {
+        tempArcanaArr.push(arcana)
+        uniqueArcana.push({ value: arcana })
+      }
+      if (!tempNameArr.includes(name)) {
+        tempNameArr.push(name)
+        uniqueName.push({ value: name })
+      }
+    }
+    personaStore.setArcanaList(uniqueArcana)
+    personaStore.setNameList(uniqueName)
+    arcanaList.value = personaStore.arcanaList
+    nameList.value = personaStore.nameList
+  })
 }
 
 const handleSelect = (item: any) => {
@@ -112,6 +135,7 @@ const handleSelect = (item: any) => {
 onMounted(() => {
   loadData()
 })
+
 </script>
 
 <style scoped lang="scss">
@@ -168,6 +192,6 @@ onMounted(() => {
   }
 }
 .el-table .cell {
-  overflow: visible
+  overflow: visible;
 }
 </style>

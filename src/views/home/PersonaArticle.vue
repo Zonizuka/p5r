@@ -71,35 +71,6 @@ const viewportWidth = ref(window.innerWidth)
 // 本地存储的数据
 const personaStore = usePersonaStore()
 // 发送请求，若本地已有数据，直接获取不进行请求
-// 读取js文件模块
-
-// 获得面具列表后，将面具列表里的personaList提取出来
-const getArcanaList = () => {
-  if (personaStore.personas.length > 0) {
-    // 创建搜索列表数组
-    const uniqueArcana: searchList[] = []
-    const uniqueName: searchList[] = []
-    // 创建一个临时数组
-    let tempArcanaArr: string[] = []
-    let tempNameArr: string[] = []
-    for (const item of personaStore.personas) {
-      let arcana = item.arcana
-      let name = item.name
-      if (!tempArcanaArr.includes(arcana)) {
-        tempArcanaArr.push(arcana)
-        uniqueArcana.push({ value: arcana })
-      }
-      if (!tempNameArr.includes(name)) {
-        tempNameArr.push(name)
-        uniqueName.push({ value: name })
-      }
-    }
-    console.log('阿尔卡纳列表', uniqueArcana)
-    console.log('面具列表', uniqueName)
-    personaStore.setArcanaList(uniqueArcana)
-    personaStore.setNameList(uniqueName)
-  }
-}
 
 // 搜索功能，父组件调用该search方法返回新的列表
 const search = (arcana: string, name: string) => {
@@ -179,9 +150,6 @@ onMounted(() => {
   getPersonaList().then((result) => {
     personaList.value = result
   })
-  console.log('发送请求了')
-  getArcanaList()
-  console.log('处理了阿尔卡纳列表和面具')
   window.addEventListener('resize', handleShow)
   handleShow()
 })

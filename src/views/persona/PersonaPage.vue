@@ -7,11 +7,7 @@
       :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="setCellStyle"
     >
-      <el-table-column
-        label="名称"
-        :min-width="tableWidth"
-        class="name"
-      >
+      <el-table-column label="名称" :min-width="tableWidth" class="name">
         <template #default="scope">
           <div>
             <a href="" @click.prevent="">{{ scope.row.name }}</a>
@@ -59,7 +55,7 @@
       />
     </el-table>
   </div>
-  <div class="skill-page">
+  <div class="skill">
     <el-table
       :data="personaPageSkill"
       border
@@ -76,28 +72,23 @@
       :data="personaPageFusion"
       border
       style="width: 100%"
-      :header-cell-style="{ 'text-align': 'center'}"
+      :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="{ 'text-align': 'center' }"
     >
       <el-table-column label="反向合成表">
         <template #default="scope">
           <div>
-            <span v-for="(item, index) in scope.row" 
-            :key="index"  
-            >
-              <a  
-                href=""  
-                @click.prevent="refresh(item.id)"  
-              >  
-                {{ item.arcanaName + "LV" + item.level + item.name }}  
+            <span v-for="(item, index) in scope.row" :key="index">
+              <a href="" @click.prevent="refresh(item.id)">
+                {{ item.arcanaName + 'LV' + item.level + item.name }}
               </a>
-              <span v-if="index < scope.row.length - 1"> + </span>  
+              <span v-if="index < scope.row.length - 1"> + </span>
             </span>
-          </div>  
+          </div>
         </template>
-      </el-table-column> 
+      </el-table-column>
     </el-table>
-  </div> 
+  </div>
 </template>
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
@@ -249,10 +240,13 @@ const getPersonaFusion = () => {
         // 查找策略，找到的区间面具必须resultType == 1才行
         if (subSelfArr[j].level < selfLevel && subSelfArr[j].resultType == 1) {
           interval[0] = subSelfArr[j].level
-        } else if (subSelfArr[j].level > selfLevel && subSelfArr[j].resultType == 1) {
-            interval[1] = selfLevel
-            break
-          } 
+        } else if (
+          subSelfArr[j].level > selfLevel &&
+          subSelfArr[j].resultType == 1
+        ) {
+          interval[1] = selfLevel
+          break
+        }
       }
       console.log('interval', interval)
       for (let i = 0; i < fusion.length - 1; i += 2) {
@@ -262,32 +256,46 @@ const getPersonaFusion = () => {
         // 用hashmap存子序列，提高效率，避免重复查找
         const subPersonaArr1 = searchSubArray(arcana1)
         const subPersonaArr2 = searchSubArray(arcana2)
-        
+
         for (let j = 0; j < subPersonaArr1.length; j++) {
           // 用第一个子序列中的每个面具等级和当前面具等级进行计算
           // 先判断第一个子序列中的面具fusionType是否小于等于3，如果为3即宝魔，必须persona2也为3
           const persona1 = subPersonaArr1[j]
           if (persona1.fusionType <= 3) {
-            const temp = [(interval[0] - 1) * 2 - persona1.level, (interval[1] - 1) * 2 - persona1.level]
+            const temp = [
+              (interval[0] - 1) * 2 - persona1.level,
+              (interval[1] - 1) * 2 - persona1.level
+            ]
             for (let k = 0; k < subPersonaArr2.length; k++) {
               const persona2 = subPersonaArr2[k]
               // 可能是固定配方，如果遇到就跳过
-              if (persona1.fusionType === 2 && persona2.fusionType === 2 && fixed[persona1.id] === persona2.id) {
+              if (
+                persona1.fusionType === 2 &&
+                persona2.fusionType === 2 &&
+                fixed[persona1.id] === persona2.id
+              ) {
                 continue
               }
               // 如果只有一方为宝魔，跳过
-              if ((persona1.fusionType === 3 && persona2.fusionType !== 3) || (persona1.fusionType !== 3 && persona2.fusionType === 3)) continue
+              if (
+                (persona1.fusionType === 3 && persona2.fusionType !== 3) ||
+                (persona1.fusionType !== 3 && persona2.fusionType === 3)
+              )
+                continue
               // 左开右闭区间
               if (persona2.level > temp[0] && persona2.level <= temp[1]) {
                 // console.log(persona1, persona2)
                 resultArray.push([persona1, persona2])
               }
             }
-          } 
+          }
         }
       }
       // 该查找同阿尔卡纳的面具了，从该阿尔卡纳序列中分离出该面具，无法参与合成的不用考虑
-      const removedArray: personaDetail[] = subSelfArr.filter(personaDetail => personaDetail.id !== id && personaDetail.fusionType <= 2)
+      const removedArray: personaDetail[] = subSelfArr.filter(
+        (personaDetail) =>
+          personaDetail.id !== id && personaDetail.fusionType <= 2
+      )
       console.log('subSelfArr', subSelfArr)
       console.log('removedArray', removedArray)
       console.log('id', id)
@@ -305,7 +313,11 @@ const getPersonaFusion = () => {
             let upper = persona2.level
             while (index >= 0 && removedArray[index].level > selfLevel) {
               // 非素材面具
-              if (index !== i && index !== j && removedArray[index].resultType == 1) {
+              if (
+                index !== i &&
+                index !== j &&
+                removedArray[index].resultType == 1
+              ) {
                 upper = removedArray[index].level
               }
               index--
@@ -315,27 +327,27 @@ const getPersonaFusion = () => {
             let flag = upper === persona2.level
             if (result >= selfLevel && result <= upper && flag) {
               resultArray.push([persona1, persona2])
-            }else if (result >= selfLevel && result < upper && !flag){
+            } else if (result >= selfLevel && result < upper && !flag) {
               resultArray.push([persona1, persona2])
             }
           }
         }
       }
       console.log('resultArray', resultArray)
-      
     } // resultType为2说明有固定配方
     else if (resultType == 2) {
       // 有固定配方就看fusionList
       const fusionArray = personaDetail.fusionList
-      if (fusionArray === undefined) throw console.error('未添加合成信息!');
+      if (fusionArray === undefined) throw console.error('未添加合成信息!')
       let fixedFusionList = []
       for (let i = 0; i < fusionArray.length; i++) {
-        fixedFusionList.push(personaDetailStore.personaDetails[fusionArray[i] - 1])
+        fixedFusionList.push(
+          personaDetailStore.personaDetails[fusionArray[i] - 1]
+        )
       }
       resultArray.push(fixedFusionList)
       console.log('resultArray', resultArray)
-
-    }else if (resultType == 3) {
+    } else if (resultType == 3) {
       resultArray.push()
     }
     personaPageFusion.value = resultArray
@@ -406,7 +418,7 @@ const subArrayIndex = [
   [222, 230]
 ]
 // 固定配方
-const fixed: {[index: number]: number} = {
+const fixed: { [index: number]: number } = {
   25: 51,
   163: 164,
   69: 210
@@ -417,7 +429,7 @@ const fixed: {[index: number]: number} = {
   margin: 5px 0 0 0;
 }
 
-.skill-page .characteristic-page {
+.skill .characteristic-page {
   margin: 5px 0 0 0;
 }
 
