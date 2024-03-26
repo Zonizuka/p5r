@@ -22,8 +22,16 @@
           popper-class="sub-arcana"
         />
       </span>
-      <el-button plain class="search-btn" @click="searchFn()">搜索</el-button>
-      <el-button plain class="clear-btn" @click="clearFn()">清空</el-button>
+      <span>
+        <el-button plain class="search-btn" @click="searchFn()"
+          >搜索</el-button
+        ></span
+      >
+      <span
+        ><el-button plain class="clear-btn" @click="clearFn()"
+          >清空</el-button
+        ></span
+      >
     </div>
     <PersonaArticle ref="articleComp"></PersonaArticle>
   </div>
@@ -99,31 +107,49 @@ const createFilter = (queryString: string) => {
   }
 }
 
+const arcanaData: searchList[] = [
+  { value: '愚者' },
+  { value: '魔术师' },
+  { value: '女教皇' },
+  { value: '女皇' },
+  { value: '皇帝' },
+  { value: '教皇' },
+  { value: '恋爱' },
+  { value: '战车' },
+  { value: '正义' },
+  { value: '隐者' },
+  { value: '命运' },
+  { value: '力量' },
+  { value: '倒悬者' },
+  { value: '死神' },
+  { value: '节制' },
+  { value: '恶魔' },
+  { value: '塔' },
+  { value: '星' },
+  { value: '月' },
+  { value: '太阳' },
+  { value: '审判' },
+  { value: '顾问官' },
+  { value: '世界' }
+]
+
 // 获得面具列表后，将面具列表里的personaList提取出来
 // 加载自动补全框的数据
 const loadData = () => {
-  getPersonaList().then(res => {
-    const uniqueArcana: searchList[] = []
+  getPersonaList().then((res) => {
     const uniqueName: searchList[] = []
     // 创建一个临时数组
-    let tempArcanaArr: string[] = []
     let tempNameArr: string[] = []
     for (const item of res) {
-      let arcana = item.arcana
       let name = item.name
-      if (!tempArcanaArr.includes(arcana)) {
-        tempArcanaArr.push(arcana)
-        uniqueArcana.push({ value: arcana })
-      }
       if (!tempNameArr.includes(name)) {
         tempNameArr.push(name)
         uniqueName.push({ value: name })
       }
     }
-    personaStore.setArcanaList(uniqueArcana)
     personaStore.setNameList(uniqueName)
-    arcanaList.value = personaStore.arcanaList
     nameList.value = personaStore.nameList
+    arcanaList.value = arcanaData
   })
 }
 
@@ -142,13 +168,13 @@ onMounted(() => {
 .search {
   background-color: $default-black-color;
   width: 100%;
-  margin: 5px 0 0 0;
   .search-in-box {
     width: 100%;
     display: flex;
-    margin: 10px 10px;
+    padding: 10px 0px 10px 0px;
     justify-content: flex-start;
-
+    gap: 10px;
+    flex-shrink: 1;
     // .arcana-span {
     //   // margin-right: 10px;
     //   .arcana {
@@ -158,23 +184,17 @@ onMounted(() => {
     // .persona-name-span {
     //   // margin-right: 10px;
     // }
-    .persona-name-span {
-      margin-left: 10px;
-    }
     .search-btn {
       background-color: $default-red-color;
       color: white;
       --el-button-hover-border-color: red;
       --el-button-active-border-color: #1b1818;
-      margin-left: 10px;
     }
     .clear-btn {
       background-color: #1b1818;
       color: white;
       --el-button-hover-border-color: red;
       --el-button-active-border-color: rgb(182, 49, 49);
-      margin-left: 10px;
-      margin-right: 15px;
     }
   }
 }

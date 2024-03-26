@@ -1,21 +1,18 @@
-$font-size-base: 14px;  
+$font-size-base: 14px;
 
-.center {  
+.center {
 
-  display: flex;  
+  position: relative;
 
-  flex-direction: column;
+  height: 100vh;
+  /* 使得容器占据整个视口高度 */
 
-  justify-content: flex-start;  
+  margin: 0 auto;
+  /* 左右边距自动 */
 
-  //flex-wrap: wrap; 
+  padding: 0 25%;
+  /* 左右边距30% */
 
-  height: 100vh; /* 使得容器占据整个视口高度 */  
-
-  margin: 0 auto; /* 左右边距自动 */  
-
-  padding: 0 25%; /* 左右边距30% */  
-  
   @media screen and (max-width: 1300px) {
     padding: 0 15%
   }
@@ -34,12 +31,13 @@ body {
 
   background-image: url('./background/p5r-background-violet.jpg');
 
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 
-  background-position: center;  
-  
-  background-size: cover;  
+  background-position: center;
+
+  background-size: cover;
 
   background-attachment: fixed;
+
 
 }

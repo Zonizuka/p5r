@@ -62,7 +62,7 @@
 import { getPersonaList } from '@/api/persona'
 import { usePersonaStore } from '@/stores/persona'
 import { ref, onMounted, onUnmounted } from 'vue'
-import { type persona, type searchList } from '@/common/interface'
+import { type persona } from '@/common/interface'
 // 定义渲染列表
 const personaList = ref<persona[]>([])
 // 是否展示后面内容
@@ -169,7 +169,4 @@ a:visited {
 a:hover {
   color: red;
 }
-
 </style>
-
-

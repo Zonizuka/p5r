@@ -13,12 +13,12 @@ export const getPersonaList = async () => {
     try {
       const response = await fetch('./json/PersonaList.json')
       if (!response.ok) {
-        throw new Error('Failed to load JSON file')
+        throw new Error('Failed to load PersonaList JSON file')
       }
       const data = await response.json()
       personaStore.setPersona(data)
     } catch (error) {
-      console.error('Error fetching JSON data:', error)
+      console.error('Error fetching PersonaList JSON data:', error)
     }
     return personaStore.personas
     // let { data } = await axios.request<{ data: responseParams }>('get', '/home')
