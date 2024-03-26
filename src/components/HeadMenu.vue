@@ -1,7 +1,9 @@
 <template>
   <div class="head">
     <div class="headPic">
-      <img class="homePic" src="@/assets/head/p5r-head.jpg" />
+      <img class="homePic" src="@/assets/head/p5r-head.jpg" draggable="false"/>
+      <DLC class="dlc"></DLC>
+      <DLCForm></DLCForm>
     </div>
     <div class="nav">
       <el-menu
@@ -65,6 +67,8 @@ onUnmounted(() => {
 }
 .headPic {
   margin: 0;
+  position: relative;
+  overflow: hidden;
   .homePic {
     width: 100%;
   }

@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @Version: 1.0
- * @Author: pj
- * @Date: 2024-03-23 18:13:02
- * @LastEditors: pj
- * @LastEditTime: 2024-03-24 17:23:53
- */
 import { usePersonaDetailStore } from '@/stores/personaDetail'
 
 // 此文件包含了面具所需的技能数据、合成数据、技能详情
