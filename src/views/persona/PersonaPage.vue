@@ -77,7 +77,7 @@
     >
       <el-table-column label="反向合成表">
         <template #default="scope">
-          <div>
+          <div v-if="selfResultType <= 2">
             <span v-for="(item, index) in scope.row" :key="index">
               <a href="" @click.prevent="refresh(item.id)">
                 {{ item.arcanaName + 'LV' + item.level + item.name }}
@@ -85,6 +85,7 @@
               <span v-if="index < scope.row.length - 1"> + </span>
             </span>
           </div>
+          <div v-else>无法被合成</div>
         </template>
       </el-table-column>
     </el-table>
@@ -115,6 +116,7 @@ const personaDetailStore = usePersonaDetailStore()
 // 使用路由模块，获取参数
 const route = useRoute()
 let id = +route.params.id
+let selfResultType = 0
 
 // 更改表格宽度
 const tableWidth = ref(10)
@@ -189,8 +191,8 @@ const setCellStyle: any = ({ columnIndex }: { columnIndex: number }) => {
 
 // 为技能特性数据赋值
 const getPersonaSkill = () => {
-  var personaDetail: personaDetail = {} as personaDetail
-  var personaSkill: personaSkill[] = []
+  let personaDetail: personaDetail = {} as personaDetail
+  let personaSkill: personaSkill[] = []
   getPersonaDetail().then((result) => {
     personaDetail = result[id - 1]
     getSkill().then((result) => {
@@ -216,6 +218,8 @@ const getPersonaSkill = () => {
         }
         return arr
       })()
+      // 最后调用该方法，避免异步出错
+      getPersonaFusion()
     })
   })
 }
@@ -225,6 +229,7 @@ const getPersonaFusion = () => {
   getFusion().then((fusions) => {
     const personaDetail = personaDetailStore.personaDetails[id - 1]
     const resultType = personaDetail.resultType
+    selfResultType = resultType
     const resultArray = [] as personaDetail[][]
     // 若合成类型为1，则代表可以由二体合成而来，为2代表有固定配方，为3代表无法被合成
     if (resultType == 1) {
@@ -296,9 +301,6 @@ const getPersonaFusion = () => {
         (personaDetail) =>
           personaDetail.id !== id && personaDetail.fusionType <= 2
       )
-      console.log('subSelfArr', subSelfArr)
-      console.log('removedArray', removedArray)
-      console.log('id', id)
       for (let i = 0; i < removedArray.length; i++) {
         const persona1 = removedArray[i]
         for (let j = i + 1; j < removedArray.length; j++) {
@@ -347,8 +349,6 @@ const getPersonaFusion = () => {
       }
       resultArray.push(fixedFusionList)
       console.log('resultArray', resultArray)
-    } else if (resultType == 3) {
-      resultArray.push()
     }
     personaPageFusion.value = resultArray
   })
@@ -372,7 +372,6 @@ const refresh = (newId: number) => {
   getPersonaList().then((result) => {
     personaPage.value = [result[id - 1]]
     getPersonaSkill()
-    getPersonaFusion()
   })
 }
 
@@ -381,9 +380,7 @@ onMounted(() => {
   getPersonaList().then((result) => {
     personaPage.value = [result[id - 1]]
     getPersonaSkill()
-    getPersonaFusion()
   })
-
   window.addEventListener('resize', handleWidth)
   handleWidth()
 })
