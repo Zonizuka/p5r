@@ -161,7 +161,6 @@ const handleSelect = (item: any) => {
 onMounted(() => {
   loadData()
 })
-
 </script>
 
 <style scoped lang="scss">

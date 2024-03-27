@@ -75,17 +75,22 @@
       :header-cell-style="{ 'text-align': 'center' }"
       :cell-style="{ 'text-align': 'center' }"
     >
+      <!-- 必须有数据即data绑定的必须有值才能渲染 -->
       <el-table-column label="反向合成表">
         <template #default="scope">
-          <div v-if="selfResultType <= 2">
+          <span v-if="selfResultType <= 2">
             <span v-for="(item, index) in scope.row" :key="index">
               <a href="" @click.prevent="refresh(item.id)">
                 {{ item.arcanaName + 'LV' + item.level + item.name }}
               </a>
               <span v-if="index < scope.row.length - 1"> + </span>
             </span>
-          </div>
-          <div v-else>无法被合成</div>
+          </span>
+          <span v-else>{{
+            scope.row[0].name +
+            (scope.row[0].fusionType == 3 ? '为宝魔' : '为未选中DLC面具') +
+            '不可合成'
+          }}</span>
         </template>
       </el-table-column>
     </el-table>
@@ -115,8 +120,10 @@ const personaDetailStore = usePersonaDetailStore()
 
 // 使用路由模块，获取参数
 const route = useRoute()
+// id不会响应式变化
 let id = +route.params.id
-let selfResultType = 0
+// selfResultType响应式变化
+const selfResultType = ref(3)
 
 // 更改表格宽度
 const tableWidth = ref(10)
@@ -229,7 +236,7 @@ const getPersonaFusion = () => {
   getFusion().then((fusions) => {
     const personaDetail = personaDetailStore.personaDetails[id - 1]
     const resultType = personaDetail.resultType
-    selfResultType = resultType
+    selfResultType.value = resultType
     const resultArray = [] as personaDetail[][]
     // 若合成类型为1，则代表可以由二体合成而来，为2代表有固定配方，为3代表无法被合成
     if (resultType == 1) {
@@ -349,6 +356,21 @@ const getPersonaFusion = () => {
       }
       resultArray.push(fixedFusionList)
       console.log('resultArray', resultArray)
+    } else {
+      // 占位数据
+      resultArray.push([
+        {
+          id: 0,
+          name: personaDetail.name,
+          level: 0,
+          arcana: 0,
+          skill: [],
+          characteristic: 0,
+          fusionType: personaDetail.fusionType,
+          resultType: 0,
+          arcanaName: ''
+        }
+      ])
     }
     personaPageFusion.value = resultArray
   })
@@ -439,5 +461,4 @@ a:visited {
 a:hover {
   color: red;
 }
-
 </style>

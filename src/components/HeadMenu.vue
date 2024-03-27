@@ -1,9 +1,9 @@
 <template>
   <div class="head">
     <div class="headPic">
-      <img class="homePic" src="@/assets/head/p5r-head.jpg" draggable="false"/>
-      <DLC class="dlc"></DLC>
-      <DLCForm></DLCForm>
+      <img class="homePic" src="@/assets/head/p5r-head.jpg" draggable="false" />
+      <DLC class="dlc" @click="changeStatus"></DLC>
+      <DLCForm v-if="status"></DLCForm>
     </div>
     <div class="nav">
       <el-menu
@@ -19,7 +19,6 @@
       >
         <el-menu-item class="menu-item" index="/home">面具一览</el-menu-item>
         <el-menu-item class="menu-item" index="/skill">技能列表</el-menu-item>
-        <el-menu-item class="menu-item" index="/path">路线查询</el-menu-item>
         <el-menu-item class="menu-item" index="/theory">合成原理</el-menu-item>
         <el-menu-item class="menu-item" index="/recommend"
           >面具推荐</el-menu-item
@@ -31,13 +30,22 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
+import { useDlcFormStore } from '@/stores/dlcForm'
+import { storeToRefs } from 'pinia'
 // 监听视口大小
 const viewportWidth = ref(window.innerWidth)
 const ellipsis = ref(false)
+const dlcFormStore = useDlcFormStore()
+// 解构出status，此为响应式数据
+const { status } = storeToRefs(dlcFormStore)
 
 const activeIndex = ref('home')
 const handleSelect = (key: String, keyPath: String[]) => {
   console.log(key, keyPath)
+}
+
+const changeStatus = () => {
+  dlcFormStore.setStatus(true)
 }
 
 const handleResize = () => {

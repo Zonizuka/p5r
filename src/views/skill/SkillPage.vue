@@ -100,7 +100,7 @@ onMounted(() => {
       justify-content: flex-start; /* 左对齐 */
       .button {
         box-sizing: border-box; /* 确保元素的padding和border不会增加其宽度 */
-        margin: 5px; /* 根据需要添加间距 */
+        margin: 2px; /* 根据需要添加间距 */
         flex-basis: auto; /* 根据内容设置宽度 */
         flex-grow: 0; /* 不允许元素增长以填充额外空间 */
         flex-shrink: 1; /* 允许元素在必要时缩小 */
