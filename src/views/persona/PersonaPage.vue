@@ -88,7 +88,7 @@
           </span>
           <span v-else>{{
             scope.row[0].name +
-            (scope.row[0].fusionType == 3 ? '为宝魔' : '为未选中DLC面具') +
+            (scope.row[0].fusionType == 3 ? '为宝魔' : '为未解禁面具') +
             '不可合成'
           }}</span>
         </template>
@@ -295,7 +295,11 @@ const getPersonaFusion = () => {
               )
                 continue
               // 左开右闭区间
-              if (persona2.level > temp[0] && persona2.level <= temp[1]) {
+              if (
+                persona2.level > temp[0] &&
+                persona2.level <= temp[1] &&
+                persona2.fusionType <= 3
+              ) {
                 // console.log(persona1, persona2)
                 resultArray.push([persona1, persona2])
               }
@@ -405,6 +409,7 @@ onMounted(() => {
   })
   window.addEventListener('resize', handleWidth)
   handleWidth()
+  console.log(personaDetailStore.personaDetails[id - 1])
 })
 onUnmounted(() => {
   window.removeEventListener('resize', handleWidth)

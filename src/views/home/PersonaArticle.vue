@@ -130,7 +130,7 @@ const setCellStyle: any = ({ columnIndex }: { columnIndex: number }) => {
       return { 'text-align': 'center', 'background-color': '#FFFFCC' }
     // 咒
     case 14:
-      return { 'text-align': 'center', 'background-color': '#D2D2C6' }
+      return { 'text-align': 'center', 'background-color': '#B565F9' }
   }
 }
 

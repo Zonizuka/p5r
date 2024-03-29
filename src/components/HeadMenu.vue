@@ -3,7 +3,8 @@
     <div class="headPic">
       <img class="homePic" src="@/assets/head/p5r-head.jpg" draggable="false" />
       <DLC class="dlc" @click="changeStatus"></DLC>
-      <DLCForm v-if="status"></DLCForm>
+      <MyMessage></MyMessage>
+      <Transition name="dlc-form"><DLCForm v-if="status"></DLCForm></Transition>
     </div>
     <div class="nav">
       <el-menu
@@ -88,6 +89,23 @@ onUnmounted(() => {
   overflow: hidden;
   .menu-item {
     flex: 1 1 auto;
+  }
+}
+.dlc-form-enter-active {
+  animation: move 0.3s;
+}
+
+/* 离开动画 */
+.dlc-form-leave-active {
+  animation: move 0.3s reverse;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translate(0);
   }
 }
 </style>
