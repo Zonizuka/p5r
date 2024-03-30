@@ -4,7 +4,7 @@
       >勾选已解禁的面具
       <input type="radio" :value="origin.length" v-model="isSelectAll" />全选
       <input type="radio" value="0" v-model="isSelectAll" />反选<br />
-      <span style="font-size: 11px">是否解禁会影响预测其它面具的合成</span>
+      <span style="font-size: 11px">面具是否解禁会影响其它面具的合成</span>
     </span>
     <div class="dlc-content">
       <div class="divider"><span>社群Max解禁</span></div>
@@ -352,6 +352,7 @@
 </template>
 <script lang="ts" setup>
 import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { getPersonaDetail } from '@/api/detail'
 import { useDlcFormStore } from '@/stores/dlcForm'
 import { usePersonaDetailStore } from '@/stores/personaDetail'
 // 233是1月12日之后解禁的所有面具,234是力量社群解锁的面具
@@ -378,7 +379,8 @@ const close = () => {
 // 利用set集合提高查找效率
 const save = () => {
   // 遍历origin所有的数
-  const set = new Set(isSelect.value)
+  // checkbox只能接收string类型的数据，需要转换为Number
+  const set = new Set(isSelect.value.map(Number))
   for (let i = 0; i < origin.length; i++) {
     let id = origin[i]
     if (set.has(id)) {
@@ -508,6 +510,7 @@ const watchSelectAll = watch(isSelectAll, handleAll, {
 })
 
 onMounted(() => {
+  getPersonaDetail()
   isSelect.value = dlcFormStore.formData
   isSelectAll.value = isSelect.value.length
 })
@@ -527,10 +530,9 @@ onUnmounted(() => {
   background-color: $default-red-color;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 5px 10px;
   opacity: 0.9;
   width: 300px;
-  height: 380px;
   .dlc-content {
     height: 300px;
     overflow-y: scroll;

@@ -1,12 +1,9 @@
-import request from '@/utils/request'
 import { usePersonaStore } from '@/stores/persona'
-const personaStore = usePersonaStore()
+
 // 获取面具信息的接口
-export const getPersonaService = () => {
-  request.get('/home')
-}
 
 export const getPersonaList = async () => {
+  const personaStore = usePersonaStore()
   if (personaStore.personas.length > 0) {
     return personaStore.personas
   } else {

@@ -1,8 +1,9 @@
 import { usePersonaDetailStore } from '@/stores/personaDetail'
 
 // 此文件包含了面具所需的技能数据、合成数据、技能详情
-const personaDetailStore = usePersonaDetailStore()
+
 export const getPersonaDetail = async () => {
+  const personaDetailStore = usePersonaDetailStore()
   if (personaDetailStore.personaDetails.length > 0) {
     return personaDetailStore.personaDetails
   } else {
@@ -21,6 +22,7 @@ export const getPersonaDetail = async () => {
 }
 
 export const getSkill = async () => {
+  const personaDetailStore = usePersonaDetailStore()
   if (personaDetailStore.skills.length > 0) {
     return personaDetailStore.skills
   } else {
@@ -39,6 +41,7 @@ export const getSkill = async () => {
 }
 
 export const getFusion = async () => {
+  const personaDetailStore = usePersonaDetailStore()
   if (personaDetailStore.fusions.length > 0) {
     return personaDetailStore.fusions
   } else {

@@ -39,7 +39,7 @@
 
 <script lang="ts" setup>
 // 导入钩子函数和ref
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch, onUnmounted } from 'vue'
 // 导入自定义表格组件
 import PersonaArticle from './PersonaArticle.vue'
 // 导入persona的接口
@@ -59,7 +59,6 @@ const name = ref('')
 
 // 搜索点击按钮
 const searchFn = () => {
-  console.log('点击了搜索按钮')
   if (articleComp.value !== null) {
     articleComp.value.search(arcana.value, name.value)
   }
@@ -71,6 +70,17 @@ const clearFn = () => {
   name.value = ''
   articleComp.value.search('', '')
 }
+
+// 绑定搜索框
+const watchArcana = watch(arcana, searchFn, {
+  deep: true,
+  immediate: false
+})
+
+const watchName = watch(name, searchFn, {
+  deep: true,
+  immediate: false
+})
 
 // 创建阿尔卡纳和名称数组的响应式数据
 const arcanaList = ref<searchList[]>([])
@@ -160,6 +170,11 @@ const handleSelect = (item: any) => {
 
 onMounted(() => {
   loadData()
+})
+
+onUnmounted(() => {
+  watchArcana()
+  watchName()
 })
 </script>
 
