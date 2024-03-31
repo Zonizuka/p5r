@@ -164,7 +164,6 @@ const loadData = () => {
 }
 
 const handleSelect = (item: any) => {
-  console.log(item)
   searchFn()
 }
 

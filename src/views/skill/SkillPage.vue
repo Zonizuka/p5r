@@ -69,7 +69,6 @@ const skillBtn = ref<string[]>(skillType)
 const skills = ref<skill[]>([])
 let skillList: skill[] = []
 const handleClick = (name: string) => {
-  console.log(name)
   if (name === '全部') {
     skills.value = skillList
   } else {

@@ -26,7 +26,7 @@
             <div
               class="skill"
               v-for="(item, index) in scope.row.skill"
-              :key="scope.row.id"
+              :key="index"
               style="width: 100%"
             >
               <a href="" @click.prevent="handleSkillWindow(scope.row.id, index)">{{ item }}</a>
@@ -157,12 +157,20 @@ const handleSkillWindow = (id: number, index: number) => {
   // 仅需调用一次，只在点击时才加载，避免页面渲染时加载多个文件
   if (count < 1) {
     getPersonaDetail().then(() => {
-    getSkill()
+      getSkill().then(() => {
+        setSkillWindow(id, index)
+      })
+
     })
-    count++
+  }else {
+    setSkillWindow(id, index)
   }
+  count++
+}
+
+const setSkillWindow = (id: number, index: number) => {
   if (skillWindow.has(id)) {
-    const set = skillWindow.get(id)
+      const set = skillWindow.get(id)
     if (set?.has(index)) {
       set.delete(index)
     } else {
@@ -171,7 +179,6 @@ const handleSkillWindow = (id: number, index: number) => {
   } else {
     skillWindow.set(id, new Set([index]))
   }
-
 }
 
 const handleShow = () => {

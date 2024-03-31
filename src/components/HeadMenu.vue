@@ -20,10 +20,10 @@
       >
         <el-menu-item class="menu-item" index="/home">面具一览</el-menu-item>
         <el-menu-item class="menu-item" index="/skill">技能列表</el-menu-item>
-        <el-menu-item class="menu-item" index="/theory">合成原理</el-menu-item>
         <el-menu-item class="menu-item" index="/recommend"
           >面具推荐</el-menu-item
         >
+        <el-menu-item class="menu-item" index="/theory">合成原理</el-menu-item>
       </el-menu>
     </div>
   </div>
@@ -42,7 +42,6 @@ const { status } = storeToRefs(dlcFormStore)
 
 const activeIndex = ref('home')
 const handleSelect = (key: String, keyPath: String[]) => {
-  console.log(key, keyPath)
 }
 
 const changeStatus = () => {

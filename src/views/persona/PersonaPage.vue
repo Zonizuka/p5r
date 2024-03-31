@@ -260,7 +260,6 @@ const getPersonaFusion = () => {
           break
         }
       }
-      console.log('interval', interval)
       for (let i = 0; i < fusion.length - 1; i += 2) {
         // 查找
         const arcana1 = fusion[i]
@@ -346,7 +345,6 @@ const getPersonaFusion = () => {
           }
         }
       }
-      console.log('resultArray', resultArray)
     } // resultType为2说明有固定配方
     else if (resultType == 2) {
       // 有固定配方就看fusionList
@@ -359,7 +357,6 @@ const getPersonaFusion = () => {
         )
       }
       resultArray.push(fixedFusionList)
-      console.log('resultArray', resultArray)
     } else {
       // 占位数据
       resultArray.push([
@@ -409,7 +406,6 @@ onMounted(() => {
   })
   window.addEventListener('resize', handleWidth)
   handleWidth()
-  console.log(personaDetailStore.personaDetails[id - 1])
 })
 onUnmounted(() => {
   window.removeEventListener('resize', handleWidth)
