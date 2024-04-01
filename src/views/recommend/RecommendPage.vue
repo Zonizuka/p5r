@@ -22,7 +22,7 @@
         <span class="skill-span">武道的诀窍</span>
         <span class="skill-span">技能消耗HP减少50%</span>
         <span class="skill-span">被动</span>
-        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/192')">月LV55月读命贼神</a></span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/193')">月LV55月读命贼神</a></span>
         <span class="skill-span">冰冻吸收</span>
         <span class="skill-span"></span>
         <span class="skill-span">被动</span>
@@ -64,11 +64,11 @@
         <span class="skill-span">高级咒怨强化</span>
         <span class="skill-span">咒怨属性伤害提升50%</span>
         <span class="skill-span">被动</span>
-        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/164')">恶魔LV82贝利亚初始技能</a>初始技能</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/164')">恶魔LV82贝利亚初始技能</a></span>
         <span class="skill-span">咒怨强化</span>
         <span class="skill-span">咒怨属性伤害提升25%</span>
         <span class="skill-span">被动</span>
-        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/23')">魔术师LV28克伦佐</a>32级习得</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/23')">魔术师LV28克伦佐</a>32级习得</span>
         <span class="skill-span">魔导才能</span>
         <span class="skill-span">全魔法伤害提升25%</span>
         <span class="skill-span">被动</span>
@@ -328,7 +328,7 @@
         <span class="skill-span">新华彩乐段</span>
         <span class="skill-span">我方全体回复一半HP，并且攻击/防御/命中率与回避率提升3回合</span>
         <span class="skill-span">我方全体</span>
-        <span class="skill-span"> 愚者LV13俄耳普斯·贼神(f)和愚者LV11俄耳甫斯(f)初始技能</span>
+        <span class="skill-span">愚者LV13俄耳普斯·贼神(f)和愚者LV11俄耳甫斯(f)初始技能</span>
         <span class="skill-span">革命</span>
         <span class="skill-span">在3回合间，使敌我双方全体的暴击率上升</span>
         <span class="skill-span">敌我全体</span>
@@ -359,8 +359,272 @@
         <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/134')">倒悬者LV82阿提斯</a></span>
       </div>
     </div>
-    
-    <div>后续施工中......</div>
+    <div class="persona-table">
+      <div class="persona-type">枪P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/74')">战车LV18式王子</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">剑神的意念<a href="" @click.prevent="$router.push('/persona/28')">(魔术师LV86经津主)</a></span>
+        <span class="characteristic-span">蓄力和专心致志的倍率从2.5倍提升至3倍</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">一枪毙命</span>
+        <span class="skill-span">枪击特大高暴击率</span>
+        <span class="skill-span">敌一人</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/220')">信念LV76库夫林</a></span>
+        <span class="skill-span">至高魔弹</span>
+        <span class="skill-span">枪击特大</span>
+        <span class="skill-span">敌全体</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/220')">信念LV76库夫林</a></span>
+        <span class="skill-span">高级枪击强化</span>
+        <span class="skill-span">枪属性攻击力提升50%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/77')">战车LV38白骑士</a></span>
+        <span class="skill-span">枪击强化</span>
+        <span class="skill-span">枪属性攻击力提升25%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/77')">战车LV38白骑士</a></span>
+        <span class="skill-span">枪弹狂热</span>
+        <span class="skill-span">枪击暴击率提升</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/180')">星LV68婆苏吉</a>70级习得</span>
+        <span class="skill-span">武道的诀窍</span>
+        <span class="skill-span">技能消耗HP减少50%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/193')">月LV55月读命贼神</a></span>
+        <span class="skill-span">瞬间恢复</span>
+        <span class="skill-span">1回合内从异常中恢复</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">核热吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/102')">隐者LV86法夫纳</a>92级习得</span>
+      </div>
+    </div>
+    <div class="persona-table">
+      <div class="persona-type">tech＆枪P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/17')">愚者LV95撒坦耶尔</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">森罗万象的真理<a href="" @click.prevent="$router.push('/persona/62')">(教皇LV76黄龙)</a></span>
+        <span class="characteristic-span">TECHNICAL造成的伤害提升50%</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">一枪毙命</span>
+        <span class="skill-span">枪击特大高暴击率</span>
+        <span class="skill-span">敌一人</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/220')">信念LV76库夫林</a></span>
+        <span class="skill-span">至高魔弹</span>
+        <span class="skill-span">枪击特大</span>
+        <span class="skill-span">敌全体</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/220')">信念LV76库夫林</a></span>
+        <span class="skill-span">高级枪击强化</span>
+        <span class="skill-span">枪属性攻击力提升50%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/77')">战车LV38白骑士</a></span>
+        <span class="skill-span">枪击强化</span>
+        <span class="skill-span">枪属性攻击力提升25%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/77')">战车LV38白骑士</a></span>
+        <span class="skill-span">魔王的境界</span>
+        <span class="skill-span">所有攻击的伤害上升</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">撒坦耶尔98级习得</span>
+        <span class="skill-span">武道的诀窍</span>
+        <span class="skill-span">技能消耗HP减少50%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/193')">月LV55月读命贼神</a></span>
+        <span class="skill-span">瞬间恢复</span>
+        <span class="skill-span">1回合内从异常中恢复</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">不动如山</span>
+        <span class="skill-span">敌人攻击伤害减半但无法回避所有攻击</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+      </div>
+    </div>
+    <div class="persona-table">
+      <div class="persona-type">蓄力P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/102')">隐者LV86法夫纳</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">铁壁的抗体<a href="" @click.prevent="$router.push('/persona/98')">(隐者LV35荒霸吐)</a></span>
+        <span class="characteristic-span">免疫异常状态</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">蓄力</span>
+        <span class="skill-span">下一次物理攻击2.5倍伤害</span>
+        <span class="skill-span">我方一人</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/79')">战车LV50雅典娜·贼神</a></span>
+        <span class="skill-span">专心致志</span>
+        <span class="skill-span">下一次魔法攻击2.5倍伤害</span>
+        <span class="skill-span">我方一人</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/79')">战车LV50雅典娜·贼神</a></span>
+        <span class="skill-span">冰冻吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/207')">审判LV64八岐大蛇</a>66级习得</span>
+        <span class="skill-span">电击吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">监禁<a href="" @click.prevent="$router.push('/persona/37')">女教皇LV83西布莉</a>一定几率习得或者公开处刑获得</span>
+        <span class="skill-span">疾风吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/71')">恋爱LV85伊丝塔</a>初始技能</span>
+        <span class="skill-span">念动吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/82')">战车LV88蚩尤</a>92级习得</span>
+        <span class="skill-span">祝福吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/37')">女教皇LV83西布莉</a>87级习得</span>
+        <span class="skill-span">咒怨吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/134')">倒悬者LV82阿提斯</a></span>
+      </div>
+    </div>
+    <div class="persona-table">
+      <div class="persona-type">回复P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/102')">信念LV93马利亚</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">地母神的恩惠<a href="" @click.prevent="$router.push('/persona/71')">(恋爱LV85伊丝塔)</a></span>
+        <span class="characteristic-span">回复复活系技能SP消耗减少75%</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">救世者之愈</span>
+        <span class="skill-span">回复HP至全满并移除所有异常状态</span>
+        <span class="skill-span">我方全体</span>
+        <span class="skill-span">玛利亚初始技能</span>
+        <span class="skill-span">圣母的慈爱</span>
+        <span class="skill-span">使我方所有无法战斗的人以HP全满复活</span>
+        <span class="skill-span">我方全体</span>
+        <span class="skill-span">玛利亚初始技能</span>
+        <span class="skill-span">圣母的拥抱</span>
+        <span class="skill-span">每回合回复25% HP</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">玛利亚96级习得</span>
+        <span class="skill-span">圣母的呢喃</span>
+        <span class="skill-span">每回合回复15% HP和15 SP</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">玛利亚98级习得</span>
+        <span class="skill-span">不动如山</span>
+        <span class="skill-span">敌人攻击伤害减半但无法回避所有攻击</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">瞬间恢复</span>
+        <span class="skill-span">1回合内从异常中恢复</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">火焰吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/123')">力量LV74奇美拉</a></span>
+        <span class="skill-span">咒怨吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/134')">倒悬者LV82阿提斯</a></span>
+      </div>
+    </div>
+    <div class="persona-table">
+      <div class="persona-type">异常P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/15')">愚者LV76劳尔</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">沉静灵气<a href="" @click.prevent="$router.push('/persona/142')">(死神LV54苍白骑士)</a></span>
+        <span class="characteristic-span">异常状态成功率上升</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">幻影秀</span>
+        <span class="skill-span">高机率使所有敌人陷入睡眠状态</span>
+        <span class="skill-span">敌全体</span>
+        <span class="skill-span">劳尔初始技能</span>
+        <span class="skill-span">宣战布告</span>
+        <span class="skill-span">中机率使所有敌人陷入狂怒状态</span>
+        <span class="skill-span">敌全体</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/39')">女皇LV20母夜叉</a>初始技能</span>
+        <span class="skill-span">睡眠几率up</span>
+        <span class="skill-span">睡眠的附加率自动上升</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/22')">魔术师LV23睡魔</a>29级习得</span>
+        <span class="skill-span">狂怒几率up</span>
+        <span class="skill-span">狂怒的附加率自动上升</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/149')">节制LV11木叶天狗</a>13级习得</span>
+        <span class="skill-span">异常状态成功率up</span>
+        <span class="skill-span">附加异常状态的成功率自动上升</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/60')">教皇LV52御社宫司神</a>57级习得</span>
+        <span class="skill-span">瞬间恢复</span>
+        <span class="skill-span">1回合内从异常中恢复</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">普通电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">物理吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/82')">战车LV88蚩尤</a></span>
+        <span class="skill-span">祝福吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/37')">女教皇LV83西布莉</a>87级习得</span>
+      </div>
+    </div>
+    <div class="persona-table">
+      <div class="persona-type">万能P</div>
+      <div class="persona-name"><a href="" @click.prevent="$router.push('/persona/231')">世界LV80伊邪那岐大神</a> <a href="" @click.prevent="$router.push('/persona/232')">世界LV80伊邪那岐大神·贼神</a></div>
+      <div class="characteristic-box">
+        <span class="characteristic">特性</span>
+        <span class="characteristic-span">如产国之举</span>
+        <span class="characteristic-span">根据恶魔全书登陆率提升攻击力和防御力</span>
+      </div>
+      <div class="skill-box">
+        <span class="skill"><span>技能</span></span>
+        <span class="skill-span">数万真言</span>
+        <span class="skill-span">万能属性大量伤害</span>
+        <span class="skill-span">敌全体3次</span>
+        <span class="skill-span">世界LV80伊邪那岐大神和世界LV89伊邪那岐大神·贼神初始技能</span>
+        <span class="skill-span">胜利咆哮</span>
+        <span class="skill-span">战斗胜利后HP和SP完全恢复</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">伊邪纳岐大神和伊邪纳岐大神·贼神初始技能</span>
+        <span class="skill-span">魔导才能</span>
+        <span class="skill-span">全魔法伤害提升25%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">公开处刑获得</span>
+        <span class="skill-span">高级万能强化</span>
+        <span class="skill-span">万能属性伤害提升50%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">公开处刑获得</span>
+        <span class="skill-span">万能强化</span>
+        <span class="skill-span">万能属性伤害提升25%</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">伊邪纳岐大神85级习得 伊邪纳岐大神·贼神94级习得</span>
+        <span class="skill-span">不动如山</span>
+        <span class="skill-span">敌人攻击伤害减半但无法回避所有攻击</span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/212')">审判LV90弥赛亚·贼神</a></span>
+        <span class="skill-span">祝福吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span"><a href="" @click.prevent="$router.push('/persona/37')">女教皇LV83西布莉</a>87级习得</span>
+        <span class="skill-span">咒怨吸收</span>
+        <span class="skill-span"></span>
+        <span class="skill-span">被动</span>
+        <span class="skill-span">警报电椅<a href="" @click.prevent="$router.push('/persona/134')">倒悬者LV82阿提斯</a></span>
+      </div>
+    </div>
+
+    <div class="tip">最强特性，全书图鉴100%时攻击力和防御力均变为2倍</div>
   </div>
    
 </template>
@@ -372,7 +636,6 @@
   .tip {
     font-size: 12px;
     padding: 5px 5px 0 5px;
-    text-indent: 28px;
   }
 }
 .content-1 {
@@ -400,16 +663,16 @@
   .persona-type {
     background-color: $default-red-color;
     text-align: center;
-    padding: 8px 0;
-    border: 2px solid #ebeef5;
+    padding: 8px 8px;
+    border: 1px solid #ebeef5;
   }
   .persona-name {
     background-color: $default-red-color;
     text-align: center;
-    padding: 8px 0;
-    border-bottom: 2px solid #ebeef5;
-    border-left: 2px solid #ebeef5;
-    border-right: 2px solid #ebeef5;
+    padding: 8px 8px;
+    border-bottom: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+    border-right: 1px solid #ebeef5;
     a:link,
     a:visited {
       color: #fde269;
@@ -422,9 +685,9 @@
   }
   .characteristic-box {
     background-color: $default-gray-color;
-    border-bottom: 2px solid #ebeef5;
-    border-left: 2px solid #ebeef5;
-    border-right: 2px solid #ebeef5;
+    border-bottom: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+    border-right: 1px solid #ebeef5;
     
     display: grid;
     grid-template-columns: 1fr 8fr 8fr;
@@ -443,7 +706,7 @@
     text-align: center;
     box-sizing: border-box;
     background-color: $default-gray-color;
-    border-left: 2px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
     a:link,
     a:visited {
       color: blue;
@@ -458,8 +721,8 @@
 .skill-box {
   background-color: $default-gray-color;
   border-bottom: 1px solid #ebeef5;
-  border-left: 2px solid #ebeef5;
-  border-right: 2px solid #ebeef5;
+  border-left: 1px solid #ebeef5;
+  border-right: 1px solid #ebeef5;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 4fr 4fr;
@@ -474,8 +737,8 @@
   .skill-span {
     color: black;
     padding: 8px 8px;
-    border-left: 2px solid #ebeef5;
-    border-bottom: 2px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+    border-bottom: 1px solid #ebeef5;
   }
     a:link,
     a:visited {
