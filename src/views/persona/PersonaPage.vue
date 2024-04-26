@@ -273,12 +273,13 @@ const getPersonaFusion = () => {
           // 先判断第一个子序列中的面具fusionType是否小于等于3，如果为3即宝魔，必须persona2也为3
           const persona1 = subPersonaArr1[j]
           if (persona1.fusionType <= 3) {
-            const temp = [
-              (interval[0] - 1) * 2 - persona1.level,
-              (interval[1] - 1) * 2 - persona1.level
-            ]
+            // const temp = [
+            //   (interval[0] - 1) * 2 - persona1.level,
+            //   (interval[1] - 1) * 2 - persona1.level
+            // ]
             for (let k = 0; k < subPersonaArr2.length; k++) {
               const persona2 = subPersonaArr2[k]
+              const temp = Math.floor((persona1.level + persona2.level) / 2 + 1)
               // 可能是固定配方，如果遇到就跳过
               if (
                 persona1.fusionType === 2 &&
@@ -295,8 +296,8 @@ const getPersonaFusion = () => {
                 continue
               // 左开右闭区间
               if (
-                persona2.level > temp[0] &&
-                persona2.level <= temp[1] &&
+                temp > interval[0] &&
+                temp <= interval[1] &&
                 persona2.fusionType <= 3
               ) {
                 // console.log(persona1, persona2)
@@ -335,7 +336,7 @@ const getPersonaFusion = () => {
               index--
             }
             // 如果素材面具为区间上界，就可等于
-            let result = (persona1.level + persona2.level) / 2 + 1
+            let result = Math.floor((persona1.level + persona2.level) / 2 + 1)
             let flag = upper === persona2.level
             if (result >= selfLevel && result <= upper && flag) {
               resultArray.push([persona1, persona2])

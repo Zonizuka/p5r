@@ -139,6 +139,7 @@ const arcanaData: searchList[] = [
   { value: '月' },
   { value: '太阳' },
   { value: '审判' },
+  { value: '信念' },
   { value: '顾问官' },
   { value: '世界' }
 ]
